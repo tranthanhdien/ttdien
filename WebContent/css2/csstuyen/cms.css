@@ -1,0 +1,205 @@
+.dnnForm.FeedbackForm .dnnFormSectionHead {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.cms-loading {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #F49B5F;
+    width: 100%;
+}
+
+.cms-msg {
+    color: #F49B5F;
+    font-size: 1.2em;
+    line-height: 125%;
+}
+
+.cms-highlight {
+    color: #34B67A;
+}
+
+.cms-row-spacing {
+    height: 10px;
+}
+
+.cms-col-spacing {
+    width: 10px;
+}
+
+.cms-button {
+    /*box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);*/
+    padding: 5px;
+    margin: 3px;
+    display: inline-block;
+    width: 31%;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #FFFFFF !important;
+    border: 1px solid #ffffff;
+    background: none repeat scroll 0 0 #34B67A;
+}
+
+    .cms-button:hover {
+        text-decoration: none !important;
+        color: #121212 !important;
+        border: 1px solid #34B67A;
+        background: none repeat scroll 0 0 #ffffff;
+    }
+
+    .cms-button table {
+        font-size: inherit;
+        color: inherit;
+    }
+
+        .cms-button table td:first-child {
+            padding-right: 5px;
+        }
+
+        .cms-button table .icon {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            height: 30px;
+            min-width: 30px;
+            line-height: 30px;
+            margin: 0px;
+            padding: 1px;
+            vertical-align: middle;
+            color: #34B67A;
+            background-color: #ffffff;
+            border: solid 1px #dadada;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+        }
+
+    .cms-button:hover .icon {
+        color: #ffffff;
+        background-color: #34B67A;
+    }
+
+@media (min-width: 1200px) {
+    .cms-button {
+        width: 31%;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .cms-button {
+        width: 30.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .cms-button {
+        width: 30.5%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .cms-button {
+        width: 45.5%;
+    }
+}
+
+@media (max-width: 479px) {
+    .cms-button-large,
+    .cms-button {
+        width: 95%;
+    }
+}
+
+.cms-button-large {
+    width: 300px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .cms-button-large {
+        width: 95%;
+    }
+}
+
+.dnnFormItem .cms-space-small,
+.dnnFormItem .cms-button-small {
+    width: 80px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px !important;
+    margin: 0px;
+    margin-top: -3px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+.dnnFormItem .cms-space-small {
+    display: inline-block;
+}
+
+.NewsTwoMain #tabs .dnnFormItem select,
+.NewsTwoMain #tabs .dnnFormItem textarea,
+.NewsTwoMain #tabs .dnnFormItem input[type="text"],
+.NewsTwoMain #tabs .dnnFormItem input[type="password"] {
+    margin-bottom: 10px;
+}
+
+/*-------clear button in text input-------*/
+.clearable {
+    background: #fff url(images/x.html) no-repeat right -16px center !important;
+    /*border: 1px solid #999;
+    padding: 3px 18px 3px 4px; /* Use the same right padding (18) in jQ! */
+    transition: background 0.4s !important;
+}
+
+    .clearable.x {
+        background-position: right 0px center !important;
+    }
+    /* (jQ) Show icon */
+    .clearable.onX {
+        cursor: pointer !important;
+    }
+    /* (jQ) hover cursor style */
+    .clearable::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+/* Remove IE default X */
+
+.eds_containers_NewsTwo.eds_templateGroup_default .DNNModuleContent > table input[type="text"].clearable.x {
+    padding-right: 18px;
+}
+
+.dnnFormItem input[type="text"].clearable {
+    padding-right: 20px;
+}
+
+    .dnnFormItem input[type="text"].clearable.x {
+        background-position: right 2px center !important;
+    }
+/*-------clear button in text input-------*/
+
+@media handheld, only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+    .NewsTwoMain .dnnFormItem select,
+    .NewsTwoMain .dnnFormItem textarea,
+    .NewsTwoMain .dnnFormItem input[type="text"],
+    .NewsTwoMain .dnnFormItem input[type="password"] {
+        width: 60%;
+    }
+}
+
+.loginGroup {
+    float: right;
+}

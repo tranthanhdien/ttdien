@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One&amp;subset=latin,latin-ext);
+
+@import url(http://fonts.googleapis.com/css?family=Francois+One&amp;subset=latin,latin-ext);
+
+
+.NewsTwoPatternBoxWraper {
+  border: 1px solid #ddd;
+  padding: 3px;
+  margin: 0 1px 10px;
+}
+
+.eds_containers_NewsTwo > h2 {
+  font-weight: normal;
+}
+.eds_containers_NewsTwo > h2 span.Head {
+  margin: 0;
+  border: 0;
+  font-family: "Francois One", Arial, serif;
+  font-weight: normal;
+}
+.eds_containers_NewsTwo.eds_templateGroup_default {
+  border: solid 2px #ebebeb;
+}
+.eds_containers_NewsTwo.eds_templateGroup_default > h2 {
+  background: #ebebeb;
+  margin: 0 !important;
+  padding: 5px 9px 7px !important;
+}
+.eds_containers_NewsTwo.eds_templateGroup_default > h2 > span {
+  background: transparent;
+  font-size: 20px;
+  color: #2f2f2f;
+  margin: 0;
+}
+.eds_containers_NewsTwo.eds_templateGroup_default .DNNModuleContent {
+  padding: 10px;
+}
+.eds_containers_NewsTwo.eds_templateGroup_footerBox > h2 {
+  border: solid 1px #dadada;
+  padding: 2px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  background: white;
+}
+.eds_containers_NewsTwo.eds_templateGroup_footerBox > h2 span {
+  background: #ebebeb;
+  padding: 4px 9px 3px 9px;
+  display: block;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #2f2f2f;
+}
+.eds_containers_NewsTwo.eds_templateGroup_footerBox .DNNModuleContent {
+  padding: 0 15px;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox {
+  background: url(images/background/predefined/GreenBoxPatternBackground.html);
+  font-size: 12px;
+  padding: 7px 12px;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox > h2 {
+  margin: 0 0 7px 0 !important;
+  padding: 0;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox > h2 span {
+  color: white;
+  font-size: 28px;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent {
+  padding: 0;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal {
+  color: white;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal h1,
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal h2,
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal h3,
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal h4 {
+  color: white;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal a {
+  color: white;
+  text-decoration: underline;
+}
+.eds_containers_NewsTwo.eds_templateGroup_patternBox .DNNModuleContent .Normal a:hover {
+  text-decoration: none;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox
+{
+	background-color: #54bde9;
+	background-image: url("images/background/predefined/BlueBoxPatternBackground.html");
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal,
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal h1,
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal h2,
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal h3,
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal h4,
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox .Normal a
+{
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_blue.eds_templateGroup_patternBox > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox
+{
+	background-color: #333333;
+	background-image: url("images/background/predefined/DarkBoxPatternBackground.html");
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_default
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #2f2f2f;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal,
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal h1,
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal h2,
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal h3,
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal h4,
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox .Normal a
+{
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_default > h2
+{
+	background-color: #2f2f2f;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_default > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_dark.eds_templateGroup_patternBox > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox
+{
+	background-color: #a3a3a3;
+	background-image: url("images/background/predefined/GreyBoxPatternBackground.html");
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal,
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal h1,
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal h2,
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal h3,
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal h4,
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox .Normal a
+{
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_grey.eds_templateGroup_patternBox > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox
+{
+	background-color: #aa3267;
+	background-image: url("images/background/predefined/PinkBoxPatternBackground.html");
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal,
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal h1,
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal h2,
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal h3,
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal h4,
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox .Normal a
+{
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_pink.eds_templateGroup_patternBox > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox
+{
+	background-color: #a40400;
+	background-image: url("images/background/predefined/RedBoxPatternBackground.html");
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal,
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal h1,
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal h2,
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal h3,
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal h4,
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox .Normal a
+{
+	color: #ffffff;
+}
+
+.eds_containers_NewsTwo.eds_style_predefined_red.eds_templateGroup_patternBox > h2 > span
+{
+	font-family: "Francois One";
+	color: #ffffff;
+}
+
+

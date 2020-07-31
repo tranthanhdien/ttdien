@@ -1,0 +1,1487 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Group03-Thống Kê Vé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/styleT.css">
+<style type="text/css">
+/* menu*/
+.topnav1 {
+	overflow: hidden;
+	background-color: #34B67A;
+	box-shadow: 0px 2px 0px 2px #888888;
+}
+
+.topnav1 a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.active1 {
+	background-color: #35a670;
+	color: white;
+}
+
+.topnav1 .icon {
+	display: none;
+}
+
+.dropdown1 {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+}
+
+.topnav1 a:hover, .dropdown1:hover .dropbtn1 {
+	background-color: rgb(16, 157, 89);
+	color: white;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1 a:not (:first-child ), .dropdown1 .dropbtn1 {
+		display: none;
+	}
+	.topnav1 a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1.responsive {
+		position: relative;
+	}
+	.topnav1.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav1.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav1.responsive .dropdown1 {
+		float: none;
+	}
+	.topnav1.responsive .dropdown-content1 {
+		position: relative;
+	}
+	.topnav1.responsive .dropdown .dropbtn1 {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/* ****************************************************************************************button menu colapse*/
+* {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ****************************************************************************************button menu colapse*/
+
+/**************************************************************************** menu-navigation */
+.menu1 {
+	position: absolute;
+	z-index: 9999;
+	right: 10%;
+	top: 3%;
+}
+
+.menu1 .navicon1 {
+	background: transparent;
+	position: relative;
+	height: 30px;
+	width: 40px;
+	display: block;
+	z-index: 9999;
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-ms-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+	outline: none;
+}
+
+.menu1 .navicon1:before, .menu1 .navicon1:after {
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	content: "";
+	height: 3px;
+	left: 0;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	transition: 0.8s ease;
+	width: 40px;
+}
+
+.menu1 .navicon1:before {
+	-moz-box-shadow: #fff 0 14px 0 0;
+	-o-box-shadow: #fff 0 14px 0 0;
+	-ms-box-shadow: #fff 0 14px 0 0;
+	-webkit-box-shadow: #fff 0 14px 0 0;
+	box-shadow: #fff 0 14px 0 0;
+	position: absolute;
+	top: 0;
+}
+
+.menu1 .navicon1:after {
+	position: absolute;
+	top: 28px;
+}
+
+.menu1 .navicon1--active {
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+}
+
+.menu1 .navicon1--active:before {
+	-moz-box-shadow: transparent 0 0 0 0;
+	-ms-box-shadow: transparent 0 0 0 0;
+	-o-box-shadow: transparent 0 0 0 0;
+	-webkit-box-shadow: transparent 0 0 0 0;
+	box-shadow: transparent 0 0 0 0;
+	top: 15px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.menu1 .navicon1--active:after {
+	top: 15px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+.menu1 .toggle1 {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 250px;
+	background: #f9f9f9;
+	padding: 2em 3em;
+	opacity: 0;
+	-webkit-transition: ease 0.5s all;
+	-moz-transition: ease 0.5s all;
+	transition: ease 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 7px #696868;
+	-moz-box-shadow: 0px 0px 7px #696868;
+	box-shadow: 0px 0px 7px #696868;
+	right: 0;
+}
+
+.menu1 .toggle1--active {
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	margin-top: 1em;
+}
+
+.menu1 .toggle-menu1 li {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.menu1 .toggle-menu1 li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	font-size: 17px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	font-weight: 400;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.menu1 .toggle-menu1 li a:hover, .menu1 .toggle-menu1 li a.active {
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	background: none;
+}
+
+#myBtn {
+	float: left;
+	width: 100px;
+}
+
+#page {
+	padding-left: 450px;
+}
+
+.inner-block1 {
+	padding: 0.5em 2em 1.5em 2em;
+	background: #fafafa;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+	
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: 5px;
+}
+
+h2 {
+	margin-left: 40px;
+}
+
+.nav-side-menu {
+	overflow: auto;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: 200;
+	background-color: #2e353d;
+	position: fixed;
+	top: 0px;
+	width: 200px;
+	height: 100%;
+	color: #e1ffff;
+}
+
+.nav-side-menu .brand {
+	background-color: #23282e;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+.nav-side-menu .toggle-btn {
+	display: none;
+}
+
+.nav-side-menu ul, .nav-side-menu li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	line-height: 35px;
+	cursor: pointer;
+	/*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+
+.nav-side-menu ul :not(collapsed) .arrow:before, .nav-side-menu li :not(collapsed) .arrow:before
+	{
+	font-family: FontAwesome;
+	content: "\f078";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	float: right;
+}
+
+.nav-side-menu ul .active, .nav-side-menu li .active {
+	border-left: 3px solid #d19b3d;
+	background-color: #4f5b69;
+}
+
+.nav-side-menu ul .sub-menu li.active, .nav-side-menu li .sub-menu li.active
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li.active a, .nav-side-menu li .sub-menu li.active a
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li, .nav-side-menu li .sub-menu li {
+	background-color: #181c20;
+	border: none;
+	line-height: 28px;
+	border-bottom: 1px solid #23282e;
+	margin-left: 0px;
+}
+
+.nav-side-menu ul .sub-menu li:hover, .nav-side-menu li .sub-menu li:hover
+	{
+	background-color: #020203;
+}
+
+.nav-side-menu ul .sub-menu li:before, .nav-side-menu li .sub-menu li:before
+	{
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.nav-side-menu li {
+	padding-left: 0px;
+	border-left: 3px solid #2e353d;
+	border-bottom: 1px solid #23282e;
+}
+
+.nav-side-menu li a {
+	text-decoration: none;
+	color: #e1ffff;
+}
+
+.nav-side-menu li a i {
+	padding-left: 10px;
+	width: 20px;
+	padding-right: 20px;
+}
+
+.nav-side-menu li:hover {
+	border-left: 3px solid #d19b3d;
+	background-color: #4f5b69;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+@media ( max-width : 767px) {
+	.nav-side-menu {
+		position: relative;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.nav-side-menu .toggle-btn {
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 10 !important;
+		padding: 3px;
+		background-color: #ffffff;
+		color: #000;
+		width: 40px;
+		text-align: center;
+	}
+	.brand {
+		text-align: left !important;
+		font-size: 22px;
+		padding-left: 20px;
+		line-height: 50px !important;
+	}
+}
+
+@media ( min-width : 767px) {
+	.nav-side-menu .menu-list .menu-content {
+		display: block;
+	}
+}
+
+.nav-side-menu {
+	left: 0px;
+}
+
+.logo-name h2 {
+	color: #FC8213;
+	margin: 0em;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.header-main1 {
+	background: #fff;
+	padding: 0.5em 2em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.copyrights {
+	margin-top: 10px;
+}
+/**/
+body {
+	background: #A0D5EC;
+}
+
+.container {
+	margin: 16px auto;
+}
+
+.row {
+	background: white;
+}
+
+#header {
+	padding-bottom: 2rem;
+}
+
+table th, table td {
+	text-align: center;
+}
+
+.container-chart {
+	display: flex;
+	background-color: #f3f3f3;
+	padding: 1.5em;
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3), 0 14px 12px 0
+		rgba(0, 0, 0, 0.17);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+	padding: 0 2em;
+}
+
+.item {
+	padding: 0.3em 0;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 1em;
+
+	/* width and height can be anything, as long as they're equal */
+}
+
+.sv {
+	background-color: #ff006f;
+}
+
+.thuong {
+	background-color: #26d1c1;
+}
+
+.khac {
+	background-color: #D2D436;
+}
+
+.table {
+	width: 36%;
+	margin: 0 3% 0 6%;
+}
+
+.btn {
+	color: black;
+	cursor: pointer;
+	padding: 0px 9px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 35px;
+	margin: 0 0 2em;
+	max-width: 120px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 1.5rem;
+	background: #dda8ab;
+	float: left; // @media ( min-width : 400px) { // display :  
+	 inline-block ; // margin-right : 2 .5em ; // & :nth-of-type(even) { //
+	margin-right: 0;
+	//
+}
+
+//
+}
+@media ( min-width : 600px) {
+	margin: 0 1em 2em ; // &:nth-of-type(even) { //
+		margin-right: 2.5em;
+		//
+	}
+	//
+	&
+	:nth-of-type(5) { //
+		margin-right: 0;
+		//
+	}
+}
+
+&
+:hover {
+	text-decoration: none;
+}
+
+}
+.btn-2 {
+	letter-spacing: 0;
+}
+
+.btn-2:hover, .btn-2:active {
+	letter-spacing: 1px;
+}
+
+/* .btn-2:after, */
+/* .btn-2:before { */
+/*   backface-visibility: hidden; */
+/*   border: 1px solid rgba(#fff, 0); */
+/*   bottom: 0px; */
+/*   content: " "; */
+/*   display: block; */
+/*   margin: 0 auto; */
+/*   position: relative; */
+/*   transition: all 280ms ease-in-out; */
+/*   width: 0; */
+/* } */
+.btn-2:hover:after, .btn-2:hover:before {
+	backface-visibility: hidden;
+	border-color: #fff;
+	transition: width 350ms ease-in-out;
+	width: 70%;
+}
+
+.btn-2:hover:before {
+	bottom: auto;
+	top: 0;
+	width: 70%;
+}
+/* selected*/
+.center-on-page {
+	float: left;
+	margin: 4px 55px;
+}
+
+h1 {
+	text-align: center;
+}
+/* Reset Select */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: tomato;
+	background-image: none;
+}
+/* Custom Select */
+.select {
+	position: relative;
+	display: block;
+	width: 20em;
+	height: 3em;
+	line-height: 3;
+	background: tomato;
+	overflow: hidden;
+	border-radius: .25em;
+}
+
+select {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0 0 0 .5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+/* Arrow */
+.select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 1em;
+	background: #295B5F;
+	pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+	color: #f39c12;
+}
+
+.select::after {
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+}
+
+ul.dropdown-menu {
+	box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+	-webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 2px 3px 4px rgba(0, 0, 0, .175);
+	border-radius: 0;
+}
+
+li.dropdown.head-dpdn {
+	display: inline-block;
+	padding: 1em 0;
+	float: left;
+}
+
+li.dropdown.head-dpdn a.dropdown-toggle {
+	margin: 1em 2em;
+}
+
+ul.dropdown-menu li {
+	margin-left: 0;
+	width: 100%;
+	padding: 0;
+	background: #fff;
+}
+
+.wrapper-dropdown-2 .dropdown li a:hover .notification_desc p {
+	color: #424242;
+}
+
+ul.dropdown-menu.drp-mnu i.fa {
+	margin-right: 0.5em;
+}
+
+ul.dropdown-menu {
+	padding: 0;
+	min-width: 230px;
+	top: 101%;
+}
+
+.dropdown-menu>li>a {
+	padding: 3px 15px;
+	font-size: 1em;
+}
+
+ul.dropdown-menu.drp-mnu li {
+	list-style-type: none;
+	padding: 3px 0;
+}
+
+.chart {
+	background: #d9ecf4;
+	margin-right: 2.5em;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2); //
+	Rgba -moz-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+	float: left;
+}
+
+.circle {
+	margin: 20px auto 0px auto;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: black;
+	border-radius: 100%;
+}
+
+.label {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	text-shadow: 0 0px 1px #fff;
+	font-weight: 400;
+	color: black;
+	margin-top: 20px;
+}
+
+.easyPieChart {
+	position: relative;
+	text-align: center;
+}
+
+.easyPieChart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#myBtn1 {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 30px;
+	border-radius: 10px;
+width: 100px;
+}
+
+</style>
+</head>
+<body>
+<a onclick="topFunction()" id="myBtn1" title="Go to top"><img
+		src="images/icon-25-512.png" class="img-fluid img-thumbnail"></a>
+
+	<div class="container" style="background: white;">
+			<!-- bat dau menu -->
+			<div class="topnav1" id="myTopnav1" style="margin-top: 10px;">
+				<a href="index.html">Trang chủ</a>
+
+				<!-- Group diary -->
+				<a href="quanlituyen.html">Quản lí tuyến xe</a> <a
+					href="quanlidonvi.html">Quản lí hợp tác xã</a>
+				<!-- Project -->
+				<a href="quanlinhanvien.html">Quản lí nhân viên</a> <a
+					href="quanlixe.html">Quản lí xe</a> <a href="dichvuthuexe.html">Dịch
+					vụ thuê xe</a>
+
+				<!-- menu collapse -->
+
+
+				<div class="menu1">
+					<a href="#" class="navicon1"></a>
+					<div class="toggle1">
+						<ul class="toggle-menu1 list-unstyled">
+							<li><a href="feedback.html">Phản hồi khách hàng</a></li>
+							<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+							<li><a href="thongtinthoitiet.html">Thông tin thời tiết</a></li>
+							<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+							<li><a href="thongkeve.html"  class="active">Thống kê vé</a></li>
+							<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+							<li><a href="mailbox.html">Gửi mail cho tất cả nhân viên</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- //menu button -->
+
+				<a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+					onclick="myFunction()">&#9776;</a>
+			</div>
+
+
+		<!-- breakcrumb -->
+		<div style="margin-top: 1%;">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+
+					<li class="breadcrumb-item"><a href="index.html"
+						style="font-size: 18px;">Trang chủ</a></li>
+					<li class="breadcrumb-item active" aria-current="page"
+						style="font-size: 17px;">Thống kê vé</li>
+
+				</ol>
+			</nav>
+		</div>
+		<!-- //breakcrumb -->
+		<div>
+			<h5 style="margin-left: 40%; font-weight: bold; font-size: 24px;">THỐNG
+				KÊ VÉ</h5>
+				
+		</div>
+		<div class="row" id="header">
+
+			<div class="chart-main-block" style="width: 100%">
+				<div class="chart-first-line">
+
+					<div class="buttons-main">
+						<div class="btn-effcts panel-widget">
+
+
+							<div class="btn-group">
+								<button class="btn btn-danger" type="button">
+									<i class="fas fa-backward"></i>
+								</button>
+							</div>
+							<div class="btn-group">
+								<button class="btn year btn-danger dropdown-toggle"
+									type="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="font-size: 14px">2015</button>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="hvr-wobble-skew">HTX.Ngôi Sao
+											Sài Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Buýt Sài
+											Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.19/5</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Quyết
+											Thắng</a></li>
+									<li><a href="#" class="hvr-wobble-skew">Liên Hiệp Hợp
+											Tác Xã TP</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn year btn-danger dropdown-toggle"
+									type="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="font-size: 14px">2016</button>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="hvr-wobble-skew">HTX.Ngôi Sao
+											Sài Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Buýt Sài
+											Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.19/5</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Quyết
+											Thắng</a></li>
+									<li><a href="#" class="hvr-wobble-skew">Liên Hiệp Hợp
+											Tác Xã TP</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn year btn-danger dropdown-toggle"
+									type="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="font-size: 14px">2017</button>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="hvr-wobble-skew">HTX.Ngôi Sao
+											Sài Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Buýt Sài
+											Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.19/5</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Quyết
+											Thắng</a></li>
+									<li><a href="#" class="hvr-wobble-skew">Liên Hiệp Hợp
+											Tác Xã TP</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn year btn-danger dropdown-toggle active"
+									type="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="font-size: 14px">2018</button>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="hvr-wobble-skew">HTX.Ngôi Sao
+											Sài Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Buýt Sài
+											Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.19/5</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Quyết
+											Thắng</a></li>
+									<li><a href="#" class="hvr-wobble-skew">Liên Hiệp Hợp
+											Tác Xã TP</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn year btn-danger dropdown-toggle"
+									type="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" style="font-size: 14px">2019</button>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="hvr-wobble-skew">HTX.Ngôi Sao
+											Sài Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Buýt Sài
+											Gòn</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.19/5</a></li>
+									<li><a href="#" class="hvr-wobble-skew">HTX.Quyết
+											Thắng</a></li>
+									<li><a href="#" class="hvr-wobble-skew">Liên Hiệp Hợp
+											Tác Xã TP</a></li>
+								</ul>
+							</div>
+							<div class="btn-group">
+								<button class="btn btn-danger " type="button">
+									<i class="fas fa-forward"></i>
+								</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="chart">
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<div style="display: flex; flex-direction: column; padding: 2%;">
+				<main style="padding-bottom:8%;">
+				<h2 style="margin-bottom: 5px;">Biểu Đồ Thống Kê Số Lượng Vé
+					Bán Ra</h2>
+				<div id="bar-chart"></div>
+				</main>
+				<h2 style="margin-bottom: 5px;">Mức Độ Hoàn Thành Chỉ Tiêu</h2>
+				<div class="chart"
+					style="display: flex; flex-direction: row-reverse;">
+					<div style="flex-grow: 1">
+						<div class="percentage circle easyPieChart" data-percent="90"
+							style="width: 140px; height: 140px; line-height: 140px; margin-left: 10%;">
+							<span>90</span>%
+							<canvas width="140" height="140"></canvas>
+						</div>
+						<div class="label">Vé sinh viên</div>
+					</div>
+					<div style="flex-grow: 1">
+						<div class="percentage circle easyPieChart" data-percent="85"
+							style="width: 140px; height: 140px; line-height: 140px; margin-left: 10%;">
+							<span>85</span>%
+							<canvas width="140" height="140"></canvas>
+						</div>
+						<div class="label">Vé thường</div>
+					</div>
+				</div>
+			</div>
+			<table class="table">
+				<thead>
+					<tr style="background: #34B67A">
+						<th scope="col">Tháng</th>
+						<th scope="col">Vé thường</th>
+						<th scope="col">Vé sinh viên</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>7050</td>
+						<td>9000</td>
+
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>8370</td>
+						<td>10010</td>
+
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>6560</td>
+						<td>7400</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>8030</td>
+						<td>9440</td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td>7290</td>
+						<td>8480</td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<td>9170</td>
+						<td>12060</td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td>7260</td>
+						<td>5320</td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td>8170</td>
+						<td>7060</td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td>7170</td>
+						<td>9660</td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td>5170</td>
+						<td>8960</td>
+					</tr>
+					<tr>
+						<th scope="row">11</th>
+						<td>6170</td>
+						<td>10060</td>
+					</tr>
+					<tr>
+						<th scope="row">12</th>
+						<td>8170</td>
+						<td>9460</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- scroll top -->
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn1").style.display = "block";
+    } else {
+        document.getElementById("myBtn1").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+	<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawCharts);
+function drawCharts() {
+  
+  // BEGIN BAR CHART
+  /*
+  // create zero data so the bars will 'grow'
+  var barZeroData = google.visualization.arrayToDataTable([
+    ['Day', 'Page Views', 'Unique Views'],
+    ['Sun',  0,      0],
+    ['Mon',  0,      0],
+    ['Tue',  0,      0],
+    ['Wed',  0,      0],
+    ['Thu',  0,      0],
+    ['Fri',  0,      0],
+    ['Sat',  0,      0]
+  ]);
+	*/
+  // actual bar chart data
+  var barData = google.visualization.arrayToDataTable([
+    ['Month', 'Vé thường', 'Vé sinh viên'],
+    ['1',  7050,      9000],
+    ['2',  8370,      10010],
+    ['3',  6560,       7400],
+    ['4',  8030,      9440],
+    ['5',  7290,      8480],
+    ['6',  9170,      12060],
+    ['7',  7260,       5320],
+    ['8',  8170,      7060],
+    ['9',  7170,      9660],
+    ['10',  5170,      8960],
+    ['11',  6170,      10060],
+    ['12',  8170,      9460],
+  ]);
+  // set bar chart options
+  var barOptions = {
+    focusTarget: 'category',
+    backgroundColor: 'transparent',
+    colors: ['#4F6CFF', '#FF7878'],
+    fontName: 'Time New Roman',
+    chartArea: {
+      left: 50,
+      top: 10,
+      width: '100%',
+      height: '70%'
+    },
+    bar: {
+      groupWidth: '80%'
+    },
+    hAxis: {
+      textStyle: {
+        fontSize: 14
+      }
+    },
+    vAxis: {
+      minValue: 0,
+      maxValue: 15000,
+      baselineColor: '#DDD',
+      gridlines: {
+        color: '#DDD',
+        count: 4
+      },
+      textStyle: {
+        fontSize: 14
+      }
+    },
+    legend: {
+      position: 'bottom',
+      textStyle: {
+        fontSize: 16
+      }
+    },
+    animation: {
+      duration: 500,
+      easing: 'out',
+			startup: true
+    }
+  };
+  // draw bar chart twice so it animates
+  var barChart = new google.visualization.ColumnChart(document.getElementById('bar-chart'));
+  //barChart.draw(barZeroData, barOptions);
+  barChart.draw(barData, barOptions);
+  
+  // BEGIN LINE GRAPH
+  
+  function randomNumber(base, step) {
+    return Math.floor((Math.random()*step)+base);
+  }
+  function createData(year, start1, start2, step, offset) {
+    var ar = [];
+    for (var i = 0; i < 12; i++) {
+      ar.push([new Date(year, i), randomNumber(start1, step)+offset, randomNumber(start2, step)+offset]);
+    }
+    return ar;
+  }
+  var randomLineData = [
+    ['Year', 'Page Views', 'Unique Views']
+  ];
+  for (var x = 0; x < 7; x++) {
+    var newYear = createData(2007+x, 10000, 5000, 4000, 800*Math.pow(x,2));
+    for (var n = 0; n < 12; n++) {
+      randomLineData.push(newYear.shift());
+    }
+  }
+}
+</script>
+	<script type="text/javascript">
+(function($) {
+	  $.easyPieChart = function(el, options) {
+	    var addScaleLine, animateLine, drawLine, easeInOutQuad, rAF, renderBackground, renderScale, renderTrack,
+	      _this = this;
+
+	    this.el = el;
+	    this.$el = $(el);
+	    this.$el.data("easyPieChart", this);
+	    this.init = function() {
+	      var percent, scaleBy;
+
+	      _this.options = $.extend({}, $.easyPieChart.defaultOptions, options);
+	      percent = parseInt(_this.$el.data('percent'), 10);
+	      _this.percentage = 0;
+	      _this.canvas = $("<canvas width='" + _this.options.size + "' height='" + _this.options.size + "'></canvas>").get(0);
+	      _this.$el.append(_this.canvas);
+	      if (typeof G_vmlCanvasManager !== "undefined" && G_vmlCanvasManager !== null) {
+	        G_vmlCanvasManager.initElement(_this.canvas);
+	      }
+	      _this.ctx = _this.canvas.getContext('2d');
+	      if (window.devicePixelRatio > 1) {
+	        scaleBy = window.devicePixelRatio;
+	        $(_this.canvas).css({
+	          width: _this.options.size,
+	          height: _this.options.size
+	        });
+	        _this.canvas.width *= scaleBy;
+	        _this.canvas.height *= scaleBy;
+	        _this.ctx.scale(scaleBy, scaleBy);
+	      }
+	      _this.ctx.translate(_this.options.size / 2, _this.options.size / 2);
+	      _this.ctx.rotate(_this.options.rotate * Math.PI / 180);
+	      _this.$el.addClass('easyPieChart');
+	      _this.$el.css({
+	        width: _this.options.size,
+	        height: _this.options.size,
+	        lineHeight: "" + _this.options.size + "px"
+	      });
+	      _this.update(percent);
+	      return _this;
+	    };
+	    this.update = function(percent) {
+	      percent = parseFloat(percent) || 0;
+	      if (_this.options.animate === false) {
+	        drawLine(percent);
+	      } else {
+	        animateLine(_this.percentage, percent);
+	      }
+	      return _this;
+	    };
+	    renderScale = function() {
+	      var i, _i, _results;
+
+	      _this.ctx.fillStyle = _this.options.scaleColor;
+	      _this.ctx.lineWidth = 1;
+	      _results = [];
+	      for (i = _i = 0; _i <= 24; i = ++_i) {
+	        _results.push(addScaleLine(i));
+	      }
+	      return _results;
+	    };
+	    addScaleLine = function(i) {
+	      var offset;
+
+	      offset = i % 6 === 0 ? 0 : _this.options.size * 0.017;
+	      _this.ctx.save();
+	      _this.ctx.rotate(i * Math.PI / 12);
+	      _this.ctx.fillRect(_this.options.size / 2 - offset, 0, -_this.options.size * 0.05 + offset, 1);
+	      _this.ctx.restore();
+	    };
+	    renderTrack = function() {
+	      var offset;
+
+	      offset = _this.options.size / 2 - _this.options.lineWidth / 2;
+	      if (_this.options.scaleColor !== false) {
+	        offset -= _this.options.size * 0.08;
+	      }
+	      _this.ctx.beginPath();
+	      _this.ctx.arc(0, 0, offset, 0, Math.PI * 2, true);
+	      _this.ctx.closePath();
+	      _this.ctx.strokeStyle = _this.options.trackColor;
+	      _this.ctx.lineWidth = _this.options.lineWidth;
+	      _this.ctx.stroke();
+	    };
+	    renderBackground = function() {
+	      if (_this.options.scaleColor !== false) {
+	        renderScale();
+	      }
+	      if (_this.options.trackColor !== false) {
+	        renderTrack();
+	      }
+	    };
+	    drawLine = function(percent) {
+	      var offset;
+
+	      renderBackground();
+	      _this.ctx.strokeStyle = $.isFunction(_this.options.barColor) ? _this.options.barColor(percent) : _this.options.barColor;
+	      _this.ctx.lineCap = _this.options.lineCap;
+	      _this.ctx.lineWidth = _this.options.lineWidth;
+	      offset = _this.options.size / 2 - _this.options.lineWidth / 2;
+	      if (_this.options.scaleColor !== false) {
+	        offset -= _this.options.size * 0.08;
+	      }
+	      _this.ctx.save();
+	      _this.ctx.rotate(-Math.PI / 2);
+	      _this.ctx.beginPath();
+	      _this.ctx.arc(0, 0, offset, 0, Math.PI * 2 * percent / 100, false);
+	      _this.ctx.stroke();
+	      _this.ctx.restore();
+	    };
+	    rAF = (function() {
+	      return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback) {
+	        return window.setTimeout(callback, 1000 / 60);
+	      };
+	    })();
+	    animateLine = function(from, to) {
+	      var anim, startTime;
+
+	      _this.options.onStart.call(_this);
+	      _this.percentage = to;
+	      startTime = Date.now();
+	      anim = function() {
+	        var currentValue, process;
+
+	        process = Date.now() - startTime;
+	        if (process < _this.options.animate) {
+	          rAF(anim);
+	        }
+	        _this.ctx.clearRect(-_this.options.size / 2, -_this.options.size / 2, _this.options.size, _this.options.size);
+	        renderBackground.call(_this);
+	        currentValue = [easeInOutQuad(process, from, to - from, _this.options.animate)];
+	        _this.options.onStep.call(_this, currentValue);
+	        drawLine.call(_this, currentValue);
+	        if (process >= _this.options.animate) {
+	          return _this.options.onStop.call(_this);
+	        }
+	      };
+	      rAF(anim);
+	    };
+	    easeInOutQuad = function(t, b, c, d) {
+	      var easeIn, easing;
+
+	      easeIn = function(t) {
+	        return Math.pow(t, 2);
+	      };
+	      easing = function(t) {
+	        if (t < 1) {
+	          return easeIn(t);
+	        } else {
+	          return 2 - easeIn((t / 2) * -2 + 2);
+	        }
+	      };
+	      t /= d / 2;
+	      return c / 2 * easing(t) + b;
+	    };
+	    return this.init();
+	  };
+	  $.easyPieChart.defaultOptions = {
+	    barColor: '#648ee0',
+	    trackColor: '#ffffff',
+	    scaleColor: 'silver',
+	    lineCap: 'round',
+	    rotate: 0,
+	    size: 160,
+	    lineWidth: 8,
+	    animate: false,
+	    onStart: $.noop,
+	    onStop: $.noop,
+	    onStep: $.noop
+	  };
+	  $.fn.easyPieChart = function(options) {
+	    return $.each(this, function(i, el) {
+	      var $el, instanceOptions;
+
+	      $el = $(el);
+	      if (!$el.data('easyPieChart')) {
+	        instanceOptions = $.extend({}, options, $el.data());
+	        return $el.data('easyPieChart', new $.easyPieChart(el, instanceOptions));
+	      }
+	    });
+	  };
+	  return void 0;
+	})(jQuery);
+
+
+	$(document).ready(function(){ 
+	                $('.percentage').easyPieChart({
+	                    animate: 1000,
+	                    onStep: function(value) {
+	                        this.$el.find('span').text(~~value);
+	                    }
+	                });
+					$('.percentage-gray').easyPieChart({
+	                    animate: 1000,
+						barColor: '#333333',
+						trackColor: '#bcbcbc',
+						scaleColor: '#fff',
+	                    onStep: function(value) {
+	                        this.$el.find('span').text(~~value);
+	                    }
+	                });
+					$('.percentage-blue').easyPieChart({
+	                    animate: 1000,
+						barColor: '#fff',
+						trackColor: '#18b5de',
+						scaleColor: '#fff',
+	                    onStep: function(value) {
+	                        this.$el.find('span').text(~~value);
+	                    }
+	                });
+	  				$('.percentage-green').easyPieChart({
+	                    animate: 1000,
+						barColor: '#fff',
+						trackColor: '#638110',
+						scaleColor: '#fff',
+	                    onStep: function(value) {
+	                        this.$el.find('span').text(~~value);
+	                    }
+	                });
+	  
+	});
+</script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav1");
+			if (x.className === "topnav1") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav1";
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		$('.btn-expand-collapse').click(function(e) {
+			$('.navbar-primary').toggleClass('collapsed');
+		});
+	</script>
+	<!-- cua phan admin  -->
+	<!-- banner bottom -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(
+						" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	<!-- menu-js: collapse  -->
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+
+</body>
+</html>

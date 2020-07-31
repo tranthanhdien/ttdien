@@ -1,0 +1,27 @@
+.imgSliderContainer{position:relative; width:100%; box-sizing:border-box; float:left}
+
+.imgSlider{width:100%; box-sizing:border-box}
+
+.imgSliderContainer .imgSlider .imgSliderC .slides_control{width:100%; box-sizing:border-box}
+
+.imgSliderContainer .imgSlider .imgSliderC{width:100%; box-sizing:border-box; background:#fff}
+
+.imgSliderContainer .imgSlider .imgSliderC a{display:block; font-size:0; box-sizing:border-box;}
+
+.imgSliderContainer .imgSlider .imgSliderC img{width:100%;  box-sizing:border-box}
+
+.imgSliderContainer .imgSlider .imgSliderPrev, .imgSliderContainer .imgSlider .imgSliderNext{  display:block;   position:absolute;   top:0;   width:10%;   height:100%;   z-index:5}
+
+.imgSliderContainer .imgSlider .imgSliderPrev{left:0}
+
+.imgSliderContainer .imgSlider .imgSliderNext{right:0}
+
+.imgSliderContainer .imgSlider .imgSliderPrev span, .imgSliderContainer .imgSlider .imgSliderNext span{z-index:15; display:block; position:absolute; top:45%; text-indent:-9999px; outline:none}
+
+.imgSliderContainer .imgSlider .imgSliderPrev span{background:url('../images/arrow_left.png') no-repeat transparent; width:21px; height:30px; left:20px}
+
+.imgSliderContainer .imgSlider .imgSliderNext span{background:url('../images/arrow_right.png') no-repeat transparent; width:21px; height:30px; right:20px}
+
+
+
+.imgSliderContainer .imgSlider .imgSliderPrev:hover span, .imgSliderContainer .imgSlider .imgSliderNext:hover span{opacity:.8}

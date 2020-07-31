@@ -1,0 +1,3035 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Group03- Thư điện tử</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="Trendy Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript">
+	
+	
+	
+	
+
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	 function hideURLbar(){ 
+		 window.scrollTo(0,1);
+		 } 
+
+
+
+
+
+</script>
+
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<link href="css/tabs.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styleT.css">
+
+</head>
+
+<style>
+.move-text {
+	background-color: #34b67a;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentFrame {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.closeFrame {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeFrame:hover, .closeFrame:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/********************************************************************************************menu */
+.topnav1 {
+	overflow: hidden;
+	background-color: #34B67A;
+	box-shadow: 0px 2px 0px 2px #888888;
+}
+
+.topnav1 a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.active1 {
+	background-color: #35a670;
+	color: white;
+}
+
+.topnav1 .icon {
+	display: none;
+}
+
+.dropdown1 {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+}
+
+.topnav1 a:hover, .dropdown1:hover .dropbtn1 {
+	background-color: rgb(16, 157, 89);
+	color: white;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1 a:not (:first-child ), .dropdown1 .dropbtn1 {
+		display: none;
+	}
+	.topnav1 a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1.responsive {
+		position: relative;
+	}
+	.topnav1.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav1.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav1.responsive .dropdown1 {
+		float: none;
+	}
+	.topnav1.responsive .dropdown-content1 {
+		position: relative;
+	}
+	.topnav1.responsive .dropdown .dropbtn1 {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/* ****************************************************************************************button menu colapse*/
+
+/**************************************************************************** menu-navigation */
+.menu1 {
+	position: absolute;
+	z-index: 9999;
+	right: 10%;
+	top: 5%;
+}
+
+.menu1 .navicon1 {
+	background: transparent;
+	position: relative;
+	height: 30px;
+	width: 40px;
+	display: block;
+	z-index: 9999;
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-ms-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+	outline: none;
+}
+
+.menu1 .navicon1:before, .menu1 .navicon1:after {
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	content: "";
+	height: 3px;
+	left: 0;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	transition: 0.8s ease;
+	width: 40px;
+}
+
+.menu1 .navicon1:before {
+	-moz-box-shadow: #fff 0 14px 0 0;
+	-o-box-shadow: #fff 0 14px 0 0;
+	-ms-box-shadow: #fff 0 14px 0 0;
+	-webkit-box-shadow: #fff 0 14px 0 0;
+	box-shadow: #fff 0 14px 0 0;
+	position: absolute;
+	top: 0;
+}
+
+.menu1 .navicon1:after {
+	position: absolute;
+	top: 28px;
+}
+
+.menu1 .navicon1--active {
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+}
+
+.menu1 .navicon1--active:before {
+	-moz-box-shadow: transparent 0 0 0 0;
+	-ms-box-shadow: transparent 0 0 0 0;
+	-o-box-shadow: transparent 0 0 0 0;
+	-webkit-box-shadow: transparent 0 0 0 0;
+	box-shadow: transparent 0 0 0 0;
+	top: 15px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.menu1 .navicon1--active:after {
+	top: 15px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+.menu1 .toggle1 {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 250px;
+	background: #f9f9f9;
+	padding: 2em 3em;
+	opacity: 0;
+	-webkit-transition: ease 0.5s all;
+	-moz-transition: ease 0.5s all;
+	transition: ease 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 7px #696868;
+	-moz-box-shadow: 0px 0px 7px #696868;
+	box-shadow: 0px 0px 7px #696868;
+	right: 0;
+}
+
+.menu1 .toggle1--active {
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	margin-top: 1em;
+}
+
+.menu1 .toggle-menu1 li {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.menu1 .toggle-menu1 li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	font-size: 17px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	font-weight: 400;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.menu1 .toggle-menu1 li a:hover, .menu1 .toggle-menu1 li a.active {
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	background: none;
+}
+
+/***********************************************************************menu-navigation */
+.tintuc {
+	float: left;
+	width: 90%;
+	margin: 1.2em 0 0;
+}
+
+.tintuc h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.tintuc h4 a {
+	color: #34b67a;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.tintuc h4 a:hover {
+	color: #ddd;
+}
+
+.tintuc h5 {
+	color: black;
+	font-size: .8em;
+	margin: 0.8em 0 1em;
+	font-weight: 400;
+}
+
+.tintuc h5 a {
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+.tintuc h5 a:hover {
+	color: #000;
+}
+
+.tintuc h5 label {
+	color: #D2D2D2;
+	padding: 0 .5em;
+}
+
+.tintuc h5 i {
+	font-style: normal;
+	color: #C0C0C0;
+}
+
+.tintuc p {
+	color: #000;
+	margin: 0;
+	font-size: .9em;
+	line-height: 1.8em;
+}
+
+/*****************************************************************************phan bang htx*/
+.search-box input[type="text"] {
+	font-size: 19px;
+}
+
+#myBtn {
+	float: left;
+	width: 100px;
+}
+
+#page {
+	padding-left: 450px;
+}
+
+.inner-block1 {
+	padding: 0.5em 2em 1.5em 2em;
+	background: #fafafa;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+	
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: 5px;
+}
+
+h2 {
+	margin-left: 40px;
+}
+
+.nav-side-menu {
+	overflow: auto;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: 200;
+	background-color: #34b67a;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 100%;
+	color: #e1ffff;
+}
+
+.nav-side-menu .brand {
+	background-color: #34b67a;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+.nav-side-menu .toggle-btn {
+	display: none;
+}
+
+.nav-side-menu ul, .nav-side-menu li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	line-height: 35px;
+	cursor: pointer;
+	/*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+
+.nav-side-menu ul :not(collapsed) .arrow:before, .nav-side-menu li :not(collapsed) .arrow:before
+	{
+	font-family: FontAwesome;
+	content: "\f078";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	float: right;
+}
+
+.nav-side-menu ul .active, .nav-side-menu li .active {
+	border-left: 3px solid #d19b3d;
+	background-color: #109d59;
+}
+
+.nav-side-menu ul .sub-menu li.active, .nav-side-menu li .sub-menu li.active
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li.active a, .nav-side-menu li .sub-menu li.active a
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li, .nav-side-menu li .sub-menu li {
+	background-color: #181c20;
+	border: none;
+	line-height: 28px;
+	border-bottom: 1px solid #23282e;
+	margin-left: 0px;
+}
+
+.nav-side-menu ul .sub-menu li:hover, .nav-side-menu li .sub-menu li:hover
+	{
+	background-color: #020203;
+}
+
+.nav-side-menu ul .sub-menu li:before, .nav-side-menu li .sub-menu li:before
+	{
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.nav-side-menu li {
+	padding-left: 0px;
+	border-left: 3px solid #2e353d;
+	border-bottom: 1px solid #23282e;
+}
+
+.nav-side-menu li a {
+	text-decoration: none;
+	color: #e1ffff;
+}
+
+.nav-side-menu li a i {
+	padding-left: 10px;
+	width: 20px;
+	padding-right: 20px;
+}
+
+.nav-side-menu li:hover {
+	border-left: 3px solid #d19b3d;
+	background-color: #4f5b69;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+@media ( max-width : 767px) {
+	.nav-side-menu {
+		position: relative;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.nav-side-menu .toggle-btn {
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 10 !important;
+		padding: 3px;
+		background-color: #ffffff;
+		color: #000;
+		width: 40px;
+		text-align: center;
+	}
+	.brand {
+		text-align: left !important;
+		font-size: 22px;
+		padding-left: 20px;
+		line-height: 50px !important;
+	}
+}
+
+@media ( min-width : 767px) {
+	.nav-side-menu .menu-list .menu-content {
+		display: block;
+	}
+}
+
+.nav-side-menu {
+	left: 0px;
+}
+
+.logo-name h2 {
+	color: #FC8213;
+	margin: 0em;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.header-main1 {
+	background: #fff;
+	padding: 0.5em 2em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.copyrights {
+	margin-top: 10px;
+}
+
+.search-form {
+	position: relative;
+	top: 50%;
+	left: 20%;
+	width: 350px;
+	height: 40px;
+	border-radius: 40px;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #fff;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.search-form.focus {
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+	position: absolute;
+	top: 10px;
+	left: 38px;
+	font-size: 14px;
+	background: none;
+	color: #5a6674;
+	width: 195px;
+	height: 20px;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.search-button {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.search-button svg {
+	width: 20px;
+	height: 20px;
+	fill: #5a6674;
+}
+
+.search-option {
+	position: absolute;
+	text-align: right;
+	top: 10px;
+	right: 15px;
+}
+
+.search-option div {
+	position: relative;
+	display: inline-block;
+	margin: 0 1px;
+	cursor: pointer;
+}
+
+.search-option div input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.01;
+	cursor: pointer;
+}
+
+.search-option div span {
+	position: absolute;
+	display: block;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	opacity: 0;
+	background: #929AA3;
+	color: #fff;
+	font-size: 9px;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 4px 7px;
+	border-radius: 12px;
+	top: -18px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div span::after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-top: 4px solid #929AA3;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div:hover span {
+	opacity: 1;
+	top: -21px;
+}
+
+.search-option div label {
+	display: block;
+	cursor: pointer;
+}
+
+.search-option div svg {
+	height: 20px;
+	width: 20px;
+	fill: #5a6674;
+	opacity: 0.6;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	pointer-events: none;
+}
+
+.search-option div:hover svg {
+	opacity: 1;
+}
+
+.search-option div input:checked+label svg {
+	fill: #e24040;
+	opacity: .9;
+}
+
+.search-option div input:checked+label span {
+	background: #e24040;
+}
+
+.search-option div input:checked+label span::after {
+	border-top-color: #e24040;
+}
+
+#over {
+	display: none;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+}
+
+.login {
+	background-color: #34b67a;
+	height: auto;
+	margin-top: 50px;
+	width: 450px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding-bottom: 5px;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	z-index: 99999;
+	top: 8%;
+	left: 60%;
+	margin-left: -300px;
+	font-size: 16px;
+	width: 450px;
+}
+
+.login .login_title {
+	color: white;
+	font-size: 25px;
+	padding: 5px 0 0px 120px;
+	margin-right: 25px;
+}
+
+.login-content label {
+	display: block;
+	padding-bottom: 7px;
+}
+
+.login-content span {
+	display: block;
+}
+
+.login-content {
+	padding-left: 50px;
+	background-color: white;
+	margin-left: -15px;
+	margin-right: 5px;
+	height: auto;
+	padding-top: 15px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+.img-close {
+	float: right;
+	margin-top: -38px;
+	margin-right: 5px
+}
+
+.button {
+	display: inline-block;
+	min-width: 46px;
+	text-align: center;
+	color: #444;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all 0.218s ease 0s;
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(center top, #F5F5F5, #F1F1F1);
+	cursor: pointer;
+}
+
+.button:hover {
+	border: 1px solid #DCDCDC;
+	text-decoration: none;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="text"], .login input[type="password"] {
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .07) inset;
+	font-family: " Times NewRoman", Times, serif;
+	font-size: 16px; "
+	height: 100px;
+	padding: 0px 8px;
+	width: 380px;
+	font-weight: normal;
+}
+
+.submit-button {
+	display: inline-block;
+	padding: auto;
+	margin: 15px 75px;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 30%;
+}
+
+.btn-info {
+	background: red;
+	border: none;
+	border-radius: 0px;
+}
+
+.btn-info:hover {
+	background: white;
+	color: red;
+	border: red solid 1px;
+}
+
+.modal-header {
+	background: red;
+	color: white;
+}
+
+.btn-default {
+	background: #ff3333;
+	color: white;
+	font-size: 16px;
+}
+
+#se {
+	margin-top: 13px;
+	margin-left: 10px;
+}
+
+select {
+	width: 150px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 10px;
+}
+
+/*nen chay xeo o vuong*/
+.br-bm-gd-lt .overlay .arrow-left {
+	position: relative;
+	left: 0;
+	width: 0;
+	height: 0;
+	top: 0;
+	bottom: 0;
+	border-bottom: 300px solid transparent;
+	border-right: 285px solid rgba(0, 0, 0, 0.85);
+	background: #63b547;
+}
+
+.br-bm-gd-lt1 {
+	background: url('image/gtBuyt.JPG') no-repeat 0px 0px;
+	display: block;
+}
+/*******************************************************************************phan table */
+table {
+	width: 100%;
+}
+
+table, th, td {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border-left: none;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	background-color: #34b67a;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #F0F0F0;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border-left: 1px solid;
+	outline: none;
+	cursor: pointer;
+	padding: 4px 8px;
+	transition: 0.3s;
+	font-size: 16px;
+}
+
+/********************************************/
+.br-bm-gd-lt1 {
+	background: #8B1C62;
+	display: block;
+}
+
+/
+*************************************************  * /
+.navbar-global {
+	background-color: indigo;
+}
+
+.navbar-global .navbar-brand {
+	color: white;
+}
+
+.navbar-global .navbar-user>li>a {
+	color: white;
+}
+
+.navbar-primary {
+	background-color: #333;
+	bottom: 30%;
+	right: 0px;
+	position: fixed;
+	top: 20%;
+	width: 200px;
+	z-index: 8;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	z-index: 8;
+}
+
+.navbar-primary.collapsed {
+	width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.navbar-primary.collapsed .nav-label {
+	display: none;
+}
+
+.btn-expand-collapse {
+	position: absolute;
+	display: block;
+	left: 0px;
+	bottom: 0;
+	width: 100%;
+	padding: 8px 0;
+	border-top: solid 1px #666;
+	color: grey;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn-expand-collapse:hover, .btn-expand-collapse:focus {
+	background-color: #222;
+	color: white;
+}
+
+.btn-expand-collapse:active {
+	background-color: #111;
+}
+
+.navbar-primary-menu, .navbar-primary-menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbar-primary-menu li a {
+	display: block;
+	padding: 10px 18px;
+	text-align: left;
+	border-bottom: solid 1px #444;
+	color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+	background-color: #000;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+	margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+	color: orchid;
+}
+
+.main-content {
+	margin-top: 60px;
+	margin-left: 200px;
+	padding: 20px;
+}
+
+.collapsed+.main-content {
+	margin-left: 60px;
+}
+/**********************************************mail box*/
+/*--inbox--*/
+.inbox-page {
+	width: 95%;
+	margin: 20px auto;
+}
+
+.inbox-row {
+	padding: 0.5em 1em;
+}
+
+.inbox-page h4 {
+	font-size: 1.1em;
+	color: #629aa9;
+	margin-bottom: 1em;
+}
+
+.mail {
+	float: left;
+	margin-right: 1em;
+}
+
+.mail.mail-name {
+	width: 15%;
+}
+
+.mail-right {
+	float: right;
+	margin-left: 1.5em;
+}
+
+li.head i.fa {
+	color: #629aa9;
+	margin-right: 10px;
+}
+
+.inbox-page h6 {
+	font-size: 1em;
+	color: #555;
+}
+
+.inbox-page input.checkbox {
+	margin: 13px 0 0;
+}
+
+.inbox-page img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.inbox-page p {
+	font-size: 1em;
+	color: #000;
+	line-height: 1.8em;
+}
+
+.inbox-page h6 {
+	font-size: 1em;
+	color: #555;
+	line-height: 2em;
+}
+
+.inbox-page ul.dropdown-menu {
+	padding: 5px 0;
+	min-width: 105px;
+	top: 0;
+	left: -110px;
+}
+
+.inbox-page .dropdown-menu>li>a {
+	padding: 4px 15px;
+	font-size: 16px;
+}
+
+.inbox-page .dropdown-menu>li>a:hover, .inbox-page .dropdown-menu>li>a:focus
+	{
+	color: #337ab7;
+}
+
+.mail-icon {
+	margin-right: 7px;
+}
+
+.inbox-page.row {
+	margin-top: 2em;
+}
+
+.inbox-page .checkbox {
+	position: relative;
+	top: -3px;
+	margin: 0 1rem 0 0;
+	cursor: pointer;
+}
+
+.inbox-page .checkbox:before {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #A0A0A0;
+}
+
+.inbox-page .checkbox:after {
+	content: "";
+	position: absolute;
+	top: -0.125rem;
+	left: 0;
+	width: 1.1rem;
+	height: 1.1rem;
+	background: #fff;
+	cursor: pointer;
+}
+
+.inbox-page .checkbox:checked:before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	height: .4rem;
+	width: .8rem;
+	border-color: #4F52BA;
+	border-top-style: none;
+	border-right-style: none;
+	border-width: 2px;
+}
+
+.mail-body {
+	padding: 1em 2em;
+	border: 1px solid #D4D4D4;
+	margin: 10px 0;
+	transition: .5s all;
+}
+
+.mail-body p {
+	font-size: 16px;
+}
+
+.mail-body input[type="text"] {
+	width: 100%;
+	border: none;
+	color: #000;
+	border-bottom: 1px solid #F5F5F5;
+	padding: 1em 0;
+	outline: none;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	font-size: 1em;
+}
+
+.mail-body input[type="text"]:focus {
+	padding: 2em 0;
+	border-bottom: 1px solid #C7C5C5;
+}
+
+.mail-body input[type="submit"] {
+	border: none;
+	background: none;
+	font-size: 1em;
+	margin-top: 0.5em;
+	color: #4F52BA;
+	outline: none;
+	font-weight: 600;
+}
+/*--//inbox--*/
+/*--compose mail--*/
+.compose-left {
+	width: 28%;
+	padding: 0;
+}
+
+.compose-right {
+	width: 70%;
+	margin-left: 2%;
+	padding: 0;
+}
+
+.compose-left a i.fa {
+	margin-right: 0.7em;
+}
+
+.compose-left ul li {
+	display: block;
+}
+
+.compose-left ul li.head {
+	padding: 0.5em 1.5em;
+	border-bottom: 1px solid #DCDCDC;
+	color: #000;
+	font-size: 1.2em;
+	background-color: #F5F5F5;
+}
+
+.compose-left ul li a {
+	display: block;
+	font-size: 1em;
+	color: #555;
+	border-bottom: 1px solid #DCDCDC;
+	padding: 0.7em 1.5em;
+}
+
+.compose-left ul li a:hover {
+	background-color: rgb(241, 241, 241);
+}
+
+.compose-left span {
+	float: right;
+	background-color: #F2B33F;
+	padding: 3px 10px;
+	font-size: .7em;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.chat-left {
+	position: relative;
+	float: left;
+	width: 25%;
+}
+
+.chat-right {
+	float: left;
+}
+
+.small-badge {
+	position: absolute;
+	left: 27px;
+	top: 1px;
+	overflow: hidden;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: 2px solid #fff !important;
+	border-radius: 20px;
+	background-color: red;
+}
+
+.small-badge.bg-green {
+	background-color: green;
+}
+
+.chat-grid.widget-shadow {
+	margin-top: 2em;
+}
+
+.chat-right p {
+	font-size: 1em;
+	color: #000;
+	line-height: 1.2em;
+}
+
+.chat-right h6 {
+	font-size: 0.8em;
+	color: #999;
+	line-height: 1.4em;
+}
+
+.compose-right .panel-heading {
+	padding: 0.8em 2em;
+}
+
+.compose-right .panel-body {
+	padding: 2em;
+}
+
+.compose-right .alert.alert-info {
+	padding: 10px 20px;
+	font-size: 0.9em;
+	color: #255a87;
+	background-color: #255a8736;
+	border-color: #255a8736;
+	border-radius: inherit;
+}
+
+.compose-right .form-group {
+	margin: .5em 0;
+}
+
+.compose-right .btn.btn-file {
+	position: relative;
+	overflow: hidden;
+	border-radius: inherit;
+	background: #f2b33f;
+	color: #fff;
+}
+
+.compose-right .btn.btn-file>input[type='file'] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: inline-flex;
+	width: 100%;
+	padding: 0.4em;
+}
+
+.compose-right p.help-block {
+	display: inline-block;
+	margin-left: 0.5em;
+	font-size: 0.9em;
+	color: #6F6F6F;
+}
+
+.compose-right input[type="submit"] {
+	font-size: 0.9em;
+	background-color: #255a87;
+	border: 1px solid #255a87;
+	color: #fff;
+	padding: 0.4em 1em;
+	margin-top: 1em;
+}
+/*--//compose mail--*/
+.widget-shadow {
+	background-color: #fff;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+	-webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, .12), 0 1px 2px
+		rgba(0, 0, 0, .24);
+	-moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, .12), 0 1px 2px
+		rgba(0, 0, 0, .24);
+}
+
+.chat-grid.widget-shadow {
+	margin-top: 2em;
+}
+#myBtn1 {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 30px;
+	border-radius: 10px;
+width: 100px;
+}
+</style>
+
+</head>
+
+<body style="background-color: rgb(160, 213, 236);">
+
+<a onclick="topFunction()" id="myBtn1" title="Go to top"><img
+		src="images/icon-25-512.png" class="img-fluid img-thumbnail"></a>
+
+	<div class="banner-bottom">
+
+		<div class="container" style="background: white; margin-top: -70px;">
+
+			<!-- bat dau menu -->
+			<div class="topnav1" id="myTopnav1" style="margin-top: 10px;">
+				<a href="index.html">Trang chủ</a>
+
+				<!-- Group diary -->
+				<a href="quanlituyen.html">Quản lí tuyến xe</a> <a
+					href="quanlidonvi.html">Quản lí hợp tác xã</a>
+				<!-- Project -->
+				<a href="quanlinhanvien.html">Quản lí nhân viên</a> <a
+					href="quanlixe.html">Quản lí xe</a> <a href="dichvuthuexe.html">Dịch
+					vụ thuê xe</a>
+
+				<!-- menu collapse -->
+
+
+				<div class="menu1">
+					<a href="#" class="navicon1"></a>
+					<div class="toggle1">
+						<ul class="toggle-menu1 list-unstyled">
+							<li><a href="feedback.html">Phản hồi khách hàng</a></li>
+							<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+							<li><a href="thongtinthoitiet.html">Thông tin thời tiết</a></li>
+							<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+							<li><a href="thongkeve.html">Thống kê vé</a></li>
+							<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+							<li><a href="mailbox.html"  class="active">Gửi mail cho tất cả nhân viên</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- //menu button -->
+
+				<a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+					onclick="myFunction()">&#9776;</a>
+			</div>
+			<div class="container">
+
+				<div class="header-right" style="float: center">
+					<div class="profile_details_left">
+
+						<!--notifications of menu start -->
+						<ul class="nofitications-dropdown">
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-envelope"></i><span
+									class="badge" style="font-size: 14px;">2</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 2 tin nhắn</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img">
+												<img src="image/da.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Đặng Văn Đa</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="image/dien.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trần Thanh Điền</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả tin nhắn</a>
+										</div>
+									</li>
+								</ul></li>
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-bell"></i><span
+									class="badge blue" style="font-size: 14px;">5</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 5 thông báo mới</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img">
+												
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Huỳnh Trấn Thành đã tao tài
+													khoản</p>
+												<p>
+													<span style="font-size: 14px;">30 phút trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Mã Giám Sinh đặt lịch thuê
+													xe 12/12/2018</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trương Phi phản hồi chất
+													lượng bến</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+											
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">51B-95960 cập nhật kẹt xe
+													kẹt xe</p>
+												<p>
+													<span style="font-size: 14px;">Hơn 2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Chất Phát phản ánh tiếp viên
+													xe 19</p>
+												<p>
+													<span style="font-size: 14px;">3 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả thông báo</a>
+										</div>
+									</li>
+
+								</ul></li>
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-tasks"></i><span
+									class="badge blue1" style="font-size: 14px;">9</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">3 lời nhắc sắp tới</h3>
+										</div>
+									</li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Database update</span><span
+													class="percentage">40%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar yellow" style="width: 40%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Dashboard done</span><span
+													class="percentage">90%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar green" style="width: 90%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class2="task-desc">Mobile App</span><span
+													class="percentage">33%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar red" style="width: 33%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Issues fixed</span><span
+													class="percentage">80%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar  blue" style="width: 80%;"></div>
+											</div>
+									</a></li>
+									<li>
+										<div class="notification_bottom">
+											<a href="#">Xem tất cả nhiệm vụ</a>
+										</div>
+									</li>
+								</ul></li>
+
+
+
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<!--notification menu end -->
+
+					<div class="profile_details">
+						<ul>
+							<li class="dropdown profile_details_drop"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false">
+									<div class="profile_img">
+										<div class="user-name">
+											<p style="font-size: 16px;">SỞ CÔNG TỬ</p>
+											<span style="font-size: 14px;">Quản trị viên</span>
+										</div>
+										<i class="fa fa-angle-down lnr"></i> <i
+											class="fa fa-angle-up lnr"></i>
+										<div class="clearfix"></div>
+									</div>
+							</a>
+								<ul class="dropdown-menu drp-mnu">
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-cog"></i> Cài đặt</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-user"></i> Profile</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-sign-out"></i> Đăng xuất</a></li>
+								</ul></li>
+						</ul>
+					</div>
+
+					<div class="clearfix"></div>
+
+
+
+				</div>
+			</div>
+
+			<div id="page-wrapper">
+				<div class="main-page">
+					<!-- breakcrumb -->
+					<div style="margin-top: 1%;">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"
+									style="font-size: 18px;">Trang chủ</a></li>
+								<li class="breadcrumb-item active" aria-current="page"
+									style="font-size: 17px;">Gửi mail cho nhân viên</li>
+							</ol>
+						</nav>
+					</div>
+					<!-- //breakcrumb -->
+
+					<div class="col-md-4 compose-left">
+
+						<div class="folder widget-shadow">
+
+							<ul>
+								<li class="head"><a href="inboxmail.html"
+									style="text-align: center; border: 1px solid #ccc;"><i
+										class="fa fa-folder" aria-hidden="true"></i>Soạn thư</a></li>
+								<li><a href="mailbox.html"><i class="fa fa-inbox"></i>Hộp
+										thư đến <span>52</span></a></li>
+								<li><a href="#ThuDaGui"><i class="fa fa fa-envelope-o"></i>Thư
+										đã gửi </a></li>
+								<li><a href="#ThuNhap"><i class="fa fa-file-text-o"></i>Thư
+										nháp <span>03</span></a></li>
+								<li><a href="#Spam"><i class="fa fa-flag-o"></i>Spam </a></li>
+								<li><a href="#ThungRac"><i class="fa fa-trash-o"></i>Thùng
+										rác</a></li>
+							</ul>
+						</div>
+						<div class="chat-grid widget-shadow">
+							<ul>
+								<li class="head"><i class="fa fa-user" aria-hidden="true"></i>Bạn bè
+									(hoạt động)</li>
+								<li><a href="#">
+										<div class="chat-left">
+											<img class="img-circle" src="images/i1.png" alt=""> <label
+												class="small-badge"></label>
+										</div>
+										<div class="chat-right">
+											<p>Alexander</p>
+											<h6>Hãy sống là chính mình</h6>
+										</div>
+										<div class="clearfix"></div>
+								</a></li>
+								<li><a href="#">
+										<div class="chat-left">
+											<img class="img-circle" src="images/i2.png" alt=""> <label
+												class="small-badge bg-green"></label>
+										</div>
+										<div class="chat-right">
+											<p>Jackson jacob</p>
+											<h6>Bạn đã tham gia cuộc gọi điện</h6>
+										</div>
+										<div class="clearfix"></div>
+								</a></li>
+								<li><a href="#">
+										<div class="chat-left">
+											<img class="img-circle" src="images/i3.png" alt=""> <label
+												class="small-badge bg-green"></label>
+										</div>
+										<div class="chat-right">
+											<p>Elisa liden</p>
+											<h6>Đang rảnh, nói chuyện vui nhé</h6>
+										</div>
+										<div class="clearfix"></div>
+								</a></li>
+								<li><a href="#">
+										<div class="chat-left">
+											<img class="img-circle" src="images/i4.png" alt=""> <label
+												class="small-badge"></label>
+										</div>
+										<div class="chat-right">
+											<p>Michael John</p>
+											<h6>Tôi đang họp</h6>
+										</div>
+										<div class="clearfix"></div>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-8 compose-right widget-shadow">
+						<div class="panel-default">
+							<div class="panel-heading">Hộp thư đến</div>
+							<div class="inbox-page">
+								<h4>Hôm nay</h4>
+								<div class="inbox-row widget-shadow" id="accordion"
+									role="tablist" aria-multiselectable="true">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i1.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Giám đốc</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseOne"
+										aria-expanded="true" aria-controls="collapseOne">
+										<div class="mail">
+											<p>Thông tin về hoạt động tháng 12</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseOne"
+													aria-expanded="true" aria-controls="collapseOne"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>10 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseOne" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingOne">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Phản hồi người gửi"
+													required=""> <input type="submit" value="Gửi đi">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow" id="accordion1"
+									role="tablist" aria-multiselectable="true">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i2.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Michael</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseTwo"
+										aria-expanded="true" aria-controls="collapseTwo">
+										<div class="mail">
+											<p>Báo các 6 tháng cuối năm</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseTwo"
+													aria-expanded="true" aria-controls="collapseTwo"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>10 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseTwo" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingTwo">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i3.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Davidson</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseThree"
+										aria-expanded="true" aria-controls="collapsethree">
+										<div class="mail">
+											<p>62B-95987 tạm ngừng hoạt động</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseThree"
+													aria-expanded="true" aria-controls="collapseThree"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>10 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseThree" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingThree">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i4.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Charley</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseFour"
+										aria-expanded="true" aria-controls="collapseFour">
+										<div class="mail">
+											<p>Tạm ngừng mã tuyến 32</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapseFour"
+													aria-expanded="true" aria-controls="collapsefour"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>10 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseFour" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingFour">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="inbox-page row">
+								<h4>Hôm qua</h4>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i2.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Michael</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseFive"
+										aria-expanded="true" aria-controls="collapseFive">
+										<div class="mail">
+											<p>Thông báo tuyển dụng từ Nhật Bản</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>9 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseFive" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingFive">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i1.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Janiya</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseSix"
+										aria-expanded="true" aria-controls="collapsesix">
+										<div class="mail">
+											<p>Tài xế 51B-98555 đâm chết người</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>9 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseSix" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingsix">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i3.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Skolski</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseSev"
+										aria-expanded="true" aria-controls="collapsesev">
+										<div class="mail">
+											<p>Đi qua nỗi nhớ</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>9 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseSev" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingsev">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i4.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Emoori</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseEight"
+										aria-expanded="true" aria-controls="collapseEight">
+										<div class="mail">
+											<p>Tạm biệt cô đơn</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>9 Th12</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseEight" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingeight">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="inbox-page row">
+								<h4>Cũ hơn</h4>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i2.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Michael</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseNine"
+										aria-expanded="true" aria-controls="collapsenine">
+										<div class="mail">
+											<p>Dọc theo con nước</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>29 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseNine" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingnine">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i1.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Janiya</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapseTen"
+										aria-expanded="true" aria-controls="collapseTen">
+										<div class="mail">
+											<p>Xuôi theo con thuyền</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>28 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapseTen" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingten">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i3.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Skolski</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse11"
+										aria-expanded="true" aria-controls="collapse11">
+										<div class="mail">
+											<p>Chảy xuôi con nước</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>28 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse11" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading11">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i4.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Emoori</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse12"
+										aria-expanded="true" aria-controls="collapse12">
+										<div class="mail">
+											<p>DÒng nước lặng im</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>27 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse12" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading12">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i1.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Janiya</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse13"
+										aria-expanded="true" aria-controls="collapse13">
+										<div class="mail">
+											<p>Bên bờ sông vắng</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>26 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse13" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading13">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i3.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Skolski</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse14"
+										aria-expanded="true" aria-controls="collapse14">
+										<div class="mail">
+											<p>Sóng nước mênh mông</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>26 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse14" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading14">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i1.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Janiya</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse15"
+										aria-expanded="true" aria-controls="collapse15">
+										<div class="mail">
+											<p>Mặt nước lặng yên</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>26 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse15" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading15">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i2.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Michael</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse16"
+										aria-expanded="true" aria-controls="collapse16">
+										<div class="mail">
+											<p>Nước cuốn trôi tất cả đi rồi</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>25 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse16" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading16">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i3.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Skolski</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse17"
+										aria-expanded="true" aria-controls="collapse17">
+										<div class="mail">
+											<p>Hòa mình vào dòng nước</p>
+										</div>
+									</a>
+									<div class="mail-right  dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse17"
+													aria-expanded="true" aria-controls="collapse17"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>25 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse17" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading17">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="inbox-row widget-shadow">
+									<div class="mail ">
+										<input type="checkbox" class="checkbox">
+									</div>
+									<div class="mail">
+										<img src="images/i4.png" alt="" />
+									</div>
+									<div class="mail mail-name">
+										<h6>Emoori</h6>
+									</div>
+									<a role="button" data-toggle="collapse"
+										data-parent="#accordion" href="#collapse18"
+										aria-expanded="true" aria-controls="collapse18">
+										<div class="mail">
+											<p>Con thuyền cặp bến rồi !! mừng quá</p>
+										</div>
+									</a>
+									<div class="mail-right dots_drop">
+										<div class="dropdown">
+											<a href="#" data-toggle="dropdown" aria-expanded="false">
+												<p>
+													<i class="fa fa-ellipsis-v mail-icon"></i>
+												</p>
+											</a>
+											<ul class="dropdown-menu float-right">
+												<li><a role="button" data-toggle="collapse"
+													data-parent="#accordion" href="#collapse18"
+													aria-expanded="true" aria-controls="collapse18"> <i
+														class="fa fa-reply mail-icon"></i> Phản hồi
+												</a></li>
+												<li><a href="#" title=""> <i
+														class="fa fa-download mail-icon"></i> Lưu trữ
+												</a></li>
+												<li><a href="#" class="font-red" title=""> <i
+														class="fa fa-trash-o mail-icon"></i> Xóa
+												</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mail-right">
+										<p>10 Th10</p>
+									</div>
+									<div class="clearfix"></div>
+									<div id="collapse18" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="heading18">
+										<div class="mail-body">
+											<p>
+												Thân gửi các bạn sinh viên,<br>Trung tâm Hỗ trợ sinh
+												viên và quan hệ doanh nghiệp gửi các bạn thông tin về các
+												hoạt động trong tháng 12:<br> 1. Hội thảo về cơ hội
+												việc làm ở nước ngoài sau khi tốt nghiệp <br>Thời Gian:
+												8h - 12h, ngày 07/12/2018 (thứ sáu)<br> Địa Điểm: Giảng
+												đường R.200 - Giảng đường Rạng Đông. <br> 2. Tổ chức
+												học và sát hạch giấy phép lái xe A1 Thời gian thi:
+												22/12/2018 Thông tin phỏng vấn tuyển dụng. Nội dung chi tiết
+												mời các bạn xem tập tin đính kèm. Trân trọng./.
+											</p>
+											<form>
+												<input type="text" placeholder="Reply to sender" required="">
+												<input type="submit" value="Send">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+<!-- scroll top -->
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn1").style.display = "block";
+    } else {
+        document.getElementById("myBtn1").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+	<!-- menu -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav1");
+			if (x.className === "topnav1") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav1";
+			}
+		}
+	</script>
+
+	<!-- //menu -->
+
+	<!-- menu-js: collapse  -->
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+	<!-- //menu-js -->
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+</body>
+</html>

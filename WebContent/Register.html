@@ -1,0 +1,307 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+<title>register</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords"
+	content="Shine Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript">
+	
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	
+</script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+$( "#datepicker" ).datepicker();
+} );
+</script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="css/stylelogin.css" type="text/css"
+	media="all" />
+<!-- Style-CSS -->
+<link rel="stylesheet" href="css/font-awesome.css">
+<!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- online-fonts -->
+<link
+	href="//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i"
+	rel="stylesheet">
+<!-- //online-fonts -->
+
+ 
+<style>
+*{
+font-family: "Times New Roman", Times, serif;
+}
+
+/***********************************************************************************button menu colapse*/
+
+/* menu-navigation */
+.menu1 {
+	position: absolute;
+	z-index: 9999;
+	right: 10%;
+	top: 14%;
+}
+
+.menu1 .navicon1 {
+	background: transparent;
+	position: relative;
+	height: 34px;
+	width: 46px;
+	display: block;
+	z-index: 9999;
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-ms-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+	outline: none;
+}
+
+.menu1 .navicon1:before, .menu1 .navicon1:after {
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	content: "";
+	height: 3px;
+	left: 0;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	transition: 0.8s ease;
+	width: 40px;
+}
+
+.menu1 .navicon1:before {
+	-moz-box-shadow: #fff 0 14px 0 0;
+	-o-box-shadow: #fff 0 14px 0 0;
+	-ms-box-shadow: #fff 0 14px 0 0;
+	-webkit-box-shadow: #fff 0 14px 0 0;
+	box-shadow: #fff 0 14px 0 0;
+	position: absolute;
+	top: 0;
+}
+
+.menu1 .navicon1:after {
+	position: absolute;
+	top: 28px;
+}
+
+.menu1 .navicon1--active {
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+}
+
+.menu1 .navicon1--active:before {
+	-moz-box-shadow: transparent 0 0 0 0;
+	-ms-box-shadow: transparent 0 0 0 0;
+	-o-box-shadow: transparent 0 0 0 0;
+	-webkit-box-shadow: transparent 0 0 0 0;
+	box-shadow: transparent 0 0 0 0;
+	top: 15px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.menu1 .navicon1--active:after {
+	top: 15px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+.menu1 .toggle1 {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 250px;
+	background: #f9f9f9;
+	padding: 2em 3em;
+	opacity: 0;
+	-webkit-transition: ease 0.5s all;
+	-moz-transition: ease 0.5s all;
+	transition: ease 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 7px #696868;
+	-moz-box-shadow: 0px 0px 7px #696868;
+	box-shadow: 0px 0px 7px #696868;
+	right: 0;
+}
+
+.menu1 .toggle1--active {
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	margin-top: 1em;
+}
+
+.menu1 .toggle-menu1 li {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.menu1 .toggle-menu1 li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	font-size: 17px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	font-weight: 400;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.menu1 .toggle-menu1 li a:hover, .menu1 .toggle-menu1 li a.active {
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	background: none;
+}
+/*****************************************************************************cai collapse */
+/* //menu-navigation */
+</style>
+</head>
+
+<body>
+	<!-- collapse  -->
+	<div class="menu1">
+		<a href="#" class="navicon1"></a>
+		<div class="toggle1">
+			<ul class="toggle-menu1 list-unstyled">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="quanlituyen.html">Quản lí mã tuyến</a></li>
+				<li><a href="quanlidonvi.html">Quản lí đơn vị (hợp tác xã)</a></li>
+				<li><a href="quanlinhanvien.html">Quản lí nhân viên</a></li>
+				<li><a href="quanlixe.html">Quản lí xe</a></li>
+				<li><a href="thoitiet.html">Thông tin thời tiết</a></li>
+				<li><a href="dichvuthuexe.html">Dịch vụ thuê xe</a></li>
+				<li><a href="feedback.html">Phản hồi khách hàng</a></li>
+				<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+				<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+				<li><a href="thongkeve.html">Thống kê vé</a></li>
+				<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+				<li><a href="mailbox.html">Gửi mail cho tất cả nhân viên</a></li>
+				<li><a href="Register.html">Register</a></li>
+				<li><a href="Login.html">Login</a></li>
+				<li><a href="Login.html">Quên mật khẩu</a></li>
+
+
+			</ul>
+		</div>
+	</div>
+	<!-- ket thuc -->
+	<!-- bat dau phan than  -->
+
+	<div class="main-content-agile">
+		<div class="sub-main-w3">
+			<h2>ĐĂNG KÍ</h2>
+			<form action="#" method="post">
+				<div class="pom-agile">
+					<span class="fa fa-user" aria-hidden="true"></span> <input
+						placeholder="Tên đăng nhập" name="Name" class="user" type="text"
+						>
+				</div>
+
+
+				<div class="pom-agile">
+					<span class="	fa fa-envelope-o" aria-hidden="true"></span> <input
+						placeholder="Email" name="Email" class="pass" type="email"
+						>
+				</div>
+
+
+				<div class="pom-agile" style="margin-top: 14px;">
+					<span class="fa fa-key" aria-hidden="true"></span> <input
+						placeholder="Nhập mật khẩu" name="Password" class="pass"
+						type="password" >
+				</div>
+
+
+				<div class="pom-agile" style="margin-top: 14px;">
+					<span class="fa fa-key" aria-hidden="true"></span> <input
+						placeholder="Nhập lại mật khẩu" name="Password" class="pass"
+						type="password" >
+				</div>
+
+
+				<div class="pom-agile" style="margin-top: 14px;">
+					<span class="fa fa-calendar	
+					" aria-hidden="true"></span> <input
+						placeholder="Ngày sinh" name="Password" class="pass" type="text"
+						id="datepicker" >
+				</div>
+				<div class="sub-w3l" style="margin-top: -20px"></div>
+				<div class="right-w3l" style="margin-left: -170px;">
+					<input type="submit" value="Đăng ký">
+				</div>
+				<div style="margin-left: 180px; margin-top: -30px;">
+				
+					<a href="Login.html" style="color: white; font-size: 17px;">Quay lại đăng nhập?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--//main-->
+	<!-- menu-js: collapse  -->
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+	<!-- //menu-js -->
+
+</body>
+
+</html>

@@ -1,0 +1,549 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<title>Group03 - Phản hồi hành khách</title>
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords"
+	content="Classic Weather Widget Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script>
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0);
+	}, false);
+
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+</script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<!-- //Meta-Tags -->
+<!-- Stylesheets -->
+<link href="css/StyleThoiTiet.css" rel='stylesheet' type='text/css' />
+<!--// Stylesheets -->
+<!--fonts-->
+<!-- title -->
+<!-- body -->
+<link
+	href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/styleT.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+.phananh {
+	width: 100%;
+	background: rgb(221, 221, 221);
+}
+
+.phananh input[type="text"], input[type="email"] {
+	width: 80%;
+	padding: 6px 6px;
+}
+
+table {
+	width: 80%;
+	border: none;
+}
+
+.demuc {
+	text-align: right;
+}
+
+.trai {
+	text-align: left;
+}
+
+select {
+	width: 80%;
+	padding: 7px 7px;
+}
+
+.tieuDeLon {
+	text-align: left;
+}
+
+input[type="submit"], input[type="reset"] {
+	width: 150px;
+	padding: 5px 5px;
+	background: #34b67a;
+	border: 1px solid #34b67a;
+	color: white;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background: white;
+	border: 1px solid #34b67a;
+	color: black;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	.phananh input[type="text"], input[type="email"], select {
+		width: 45%;
+		padding: 4px 4px;
+	}
+}
+
+}
+#myBtn1 {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 30px;
+	border-radius: 10px;
+	width: 100px;
+}
+</style>
+</head>
+<body style="background-color: rgb(160, 213, 236);">
+
+	<div class="banner-bottom">
+	
+		<div class="container" style="background: white; margin-top: 10px;">
+			<!-- bat dau menu -->
+			<div class="topnav1" id="myTopnav1" style="margin-top: 10px;">
+				<a href="index.html">Trang chủ</a>
+
+				<!-- Group diary -->
+				<a href="quanlituyen.html">Quản lí tuyến xe</a> <a
+					href="quanlidonvi.html">Quản lí hợp tác xã</a>
+				<!-- Project -->
+				<a href="quanlinhanvien.html">Quản lí nhân viên</a> <a
+					href="quanlixe.html">Quản lí xe</a> <a href="dichvuthuexe.html">Dịch
+					vụ thuê xe</a>
+
+				<!-- menu collapse -->
+
+
+				<div class="menu1">
+					<a href="#" class="navicon1"></a>
+					<div class="toggle1">
+						<ul class="toggle-menu1 list-unstyled">
+							<li><a href="feedback.html" class="active">Phản hồi
+									khách hàng</a></li>
+							<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+							<li><a href="thongtinthoitiet.html">Thông tin thời tiết</a></li>
+							<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+							<li><a href="thongkeve.html">Thống kê vé</a></li>
+							<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+							<li><a href="mailbox.html">Gửi mail cho tất cả nhân viên</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- //menu button -->
+
+				<a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+					onclick="myFunction()">&#9776;</a>
+			</div>
+
+			<div class="container">
+
+				<div class="header-right">
+					<div class="profile_details_left">
+
+						<!--notifications of menu start -->
+						<ul class="nofitications-dropdown">
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-envelope"></i><span
+									class="badge" style="font-size: 14px;">2</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 2 tin nhắn</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img">
+												<img src="image/da.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Đặng Văn Đa</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="image/dien.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trần Thanh Điền</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả tin nhắn</a>
+										</div>
+									</li>
+								</ul></li>
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-bell"></i><span
+									class="badge blue" style="font-size: 14px;">5</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 5 thông báo mới</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img"></div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Huỳnh Trấn Thành đã đăng kí
+													tài khoản</p>
+												<p>
+													<span style="font-size: 14px;">30 phút trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Mã Giám Sinh đặt lịch thuê
+													xe 12/12/2018</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trương Phi đã phản hồi chất
+													lượng bến bãi</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">51B-95960 cập nhật tình hình
+													kẹt xe</p>
+												<p>
+													<span style="font-size: 14px;">Hơn 2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Chất Phát phản ánh tiếp viên
+													Châu Hồng Anh</p>
+												<p>
+													<span style="font-size: 14px;">3 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả thông báo</a>
+										</div>
+									</li>
+
+								</ul></li>
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-tasks"></i><span
+									class="badge blue1" style="font-size: 14px;">9</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">3 lời nhắc sắp tới</h3>
+										</div>
+									</li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Database update</span><span
+													class="percentage">40%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar yellow" style="width: 40%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Dashboard done</span><span
+													class="percentage">90%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar green" style="width: 90%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class2="task-desc">Mobile App</span><span
+													class="percentage">33%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar red" style="width: 33%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Issues fixed</span><span
+													class="percentage">80%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar  blue" style="width: 80%;"></div>
+											</div>
+									</a></li>
+									<li>
+										<div class="notification_bottom">
+											<a href="#">Xem tất cả nhiệm vụ</a>
+										</div>
+									</li>
+								</ul></li>
+
+
+
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<!--notification menu end -->
+
+					<div class="profile_details">
+						<ul>
+							<li class="dropdown profile_details_drop"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false">
+									<div class="profile_img">
+										<div class="user-name">
+											<p style="font-size: 16px;">SỞ CÔNG TỬ</p>
+											<span style="font-size: 14px;">Quản trị viên</span>
+										</div>
+										<i class="fa fa-angle-down lnr"></i> <i
+											class="fa fa-angle-up lnr"></i>
+										<div class="clearfix"></div>
+									</div>
+							</a>
+								<ul class="dropdown-menu drp-mnu">
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-cog"></i> Cài đặt</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-user"></i> Profile</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-sign-out"></i> Đăng xuất</a></li>
+								</ul></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+
+			<!-- breakcrumb -->
+			<div style="margin-top: 1%; text-align: left">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html"
+							style="font-size: 18px;">Trang chủ</a></li>
+						<li class="breadcrumb-item active" aria-current="page"
+							style="font-size: 18px;">Phản ánh khách hàng</li>
+					</ol>
+				</nav>
+			</div>
+			<!-- //breakcrumb -->
+
+			<!-- phan chinh chuong trinh -->
+
+			<div class="phananh container">
+				<table class="table responsive">
+					<tbody>
+						<tr>
+							<td colspan="2" class="tieuDeLon"><h5 style="color: black;">Thông
+									tin của bạn</h5>
+								<hr style="margin-top: -.3%;"></td>
+						</tr>
+
+						<tr>
+							<td class="demuc">Địa chỉ email<label style="color: red;">
+									*</label></td>
+							<td class="trai"><input type="email"></td>
+						</tr>
+						<tr>
+							<td class="demuc">Tên <label style="color: red;"> *</label></td>
+							<td class="trai"><input type="text"></td>
+						</tr>
+						<tr>
+							<td class="demuc">Số điện thoại</td>
+							<td class="trai"><input type="text"></td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2" class="tieuDeLon"><h5 style="color: black;">Thông
+									tin phản ánh</h5>
+								<hr style="margin-top: -.3%;"></td>
+						</tr>
+
+						<tr>
+							<td class="demuc">Phản ánh về<label style="color: red;">
+									*</label></td>
+							<td class="trai"><select>
+									<option value="Chọn đề mục">Chọn đề mục</option>
+									<option value="Chất lượng, vi phạm xe buýt">Chất
+										lượng, vi phạm xe buýt</option>
+									<option value="Hạ tầng, bến bãi xe buýt">Hạ tầng, bến
+										bãi xe buýt</option>
+									<option value="Lộ trình, thời gian hoạt động tuyến">Lộ
+										trình, thời gian hoạt động tuyến</option>
+									<option value="Gương người tốt việc tốt, khen thưởng">Gương
+										người tốt việc tốt, khen thưởng</option>
+
+							</select></td>
+						</tr>
+						<tr>
+							<td class="demuc">Tiêu đề <label style="color: red;">
+									*</label></td>
+							<td class="trai"><input type="text"></td>
+						</tr>
+						<tr>
+							<td class="demuc">Nội dung<label style="color: red;">
+									*</label></td>
+							<td class="trai"><textarea rows="5" cols="90"></textarea></td>
+						</tr>
+
+						<tr>
+							<td class="demuc">Tập tin đính kèm</td>
+							<td style="text-align: left"><input type="file"></td>
+						</tr>
+						<tr>
+							<td class="demuc">Gửi tôi một bản sao</td>
+							<td style="text-align: left"><input type="checkbox"></td>
+						</tr>
+						<tr>
+							<td class="demuc">Mã bảo mật<label style="color: red;">
+									*</label></td>
+							<td class="trai"><img
+								src="image/Telerik.Web.UI.WebResource.jpg"><br> <a
+								href="#" style="cursor: pointer; color: #34b67a;">Mã bảo mật
+									khác</a><br> <input type="text" style="width: 200px;"><br>Nhập
+								vào chuỗi kí tự hiển thị trong hình bên trên</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: left"><input
+								type="submit" value="Gửi phản ánh"></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		
+
+			<!-- //ket thuc phan chinh chuong trinh -->
+
+			<!-- ket thuc -->
+
+		</div>
+	</div>
+
+
+	<!-- scroll top -->
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20
+					|| document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn1").style.display = "block";
+			} else {
+				document.getElementById("myBtn1").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction1() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<!-- menu-js: collapse  -->
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+	<!-- //menu-js -->
+
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav1");
+			if (x.className === "topnav1") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav1";
+			}
+		}
+	</script>
+	<!-- //menu -->
+
+</body>
+</html>

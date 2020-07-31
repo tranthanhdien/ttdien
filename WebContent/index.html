@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Group03- Hệ thống quản lí xe buýt TP.HCM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="Trendy Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript">
+	
+
+
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+
+
+</script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="css/tabs.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+* {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.move-text {
+	background-color: #34b67a;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentFrame {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.closeFrame {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeFrame:hover, .closeFrame:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*menu */
+.topnav1 {
+	overflow: hidden;
+	background-color: #34B67A;
+	box-shadow: 0px 2px 0px 2px #888888;
+}
+
+.topnav1 a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 19px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.active1 {
+	background-color: #35a670;
+	color: white;
+}
+
+.topnav1 .icon {
+	display: none;
+}
+
+.dropdown1 {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.topnav1 a:hover, .dropdown1:hover .dropbtn1 {
+	background-color: rgb(16, 157, 89);
+	color: white;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1 a:not (:first-child ), .dropdown1 .dropbtn1 {
+		display: none;
+	}
+	.topnav1 a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1.responsive {
+		position: relative;
+	}
+	.topnav1.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav1.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav1.responsive .dropdown1 {
+		float: none;
+	}
+	.topnav1.responsive .dropdown-content1 {
+		position: relative;
+	}
+	.topnav1.responsive .dropdown .dropbtn1 {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/**********************************************************button menu colapse*/
+
+/* menu-navigation */
+.menu1 {
+	position: absolute;
+	z-index: 9999;
+	right: 10%;
+	top: 14%;
+}
+
+.menu1 .navicon1 {
+	background: transparent;
+	position: relative;
+	height: 34px;
+	width: 46px;
+	display: block;
+	z-index: 9999;
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-ms-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+	outline: none;
+}
+
+.menu1 .navicon1:before, .menu1 .navicon1:after {
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	content: "";
+	height: 3px;
+	left: 0;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	transition: 0.8s ease;
+	width: 40px;
+}
+
+.menu1 .navicon1:before {
+	-moz-box-shadow: #fff 0 14px 0 0;
+	-o-box-shadow: #fff 0 14px 0 0;
+	-ms-box-shadow: #fff 0 14px 0 0;
+	-webkit-box-shadow: #fff 0 14px 0 0;
+	box-shadow: #fff 0 14px 0 0;
+	position: absolute;
+	top: 0;
+}
+
+.menu1 .navicon1:after {
+	position: absolute;
+	top: 28px;
+}
+
+.menu1 .navicon1--active {
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+}
+
+.menu1 .navicon1--active:before {
+	-moz-box-shadow: transparent 0 0 0 0;
+	-ms-box-shadow: transparent 0 0 0 0;
+	-o-box-shadow: transparent 0 0 0 0;
+	-webkit-box-shadow: transparent 0 0 0 0;
+	box-shadow: transparent 0 0 0 0;
+	top: 15px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.menu1 .navicon1--active:after {
+	top: 15px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+.menu1 .toggle1 {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 250px;
+	background: #f9f9f9;
+	padding: 2em 3em;
+	opacity: 0;
+	-webkit-transition: ease 0.5s all;
+	-moz-transition: ease 0.5s all;
+	transition: ease 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 7px #696868;
+	-moz-box-shadow: 0px 0px 7px #696868;
+	box-shadow: 0px 0px 7px #696868;
+	right: 0;
+}
+
+.menu1 .toggle1--active {
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	margin-top: 1em;
+}
+
+.menu1 .toggle-menu1 li {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.menu1 .toggle-menu1 li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	font-size: 17px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	font-weight: 400;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.menu1 .toggle-menu1 li a:hover, .menu1 .toggle-menu1 li a.active {
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	background: none;
+}
+
+/* //menu-navigation */
+.tintuc {
+	float: left;
+	width: 90%;
+	margin: 1.2em 0 0;
+}
+
+.tintuc h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.tintuc h4 a {
+	color: #34b67a;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.tintuc h4 a:hover {
+	color: #ddd;
+}
+
+.tintuc h5 {
+	color: black;
+	font-size: .8em;
+	margin: 0.8em 0 1em;
+	font-weight: 400;
+}
+
+.tintuc h5 a {
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+.tintuc h5 a:hover {
+	color: #000;
+}
+
+.tintuc h5 label {
+	color: #D2D2D2;
+	padding: 0 .5em;
+}
+
+.tintuc h5 i {
+	font-style: normal;
+	color: #C0C0C0;
+}
+
+.tintuc p {
+	color: black;
+	margin: 0;
+	font-size: 17.5px;
+}
+
+/*collapse tinh theo thang*/
+.collapsible1 {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 80%;
+	border-top: 1px solid #ddd;
+	text-align: left;
+	outline: none;
+	font-size: 17px;
+}
+
+.active2, .collapsible1:hover {
+	background-color: #ccc;
+}
+
+.collapsible1:after {
+	content: '\002B';
+	color: black;
+	font-weight: bold;
+	float: left;
+	margin-left: 5px;
+}
+
+.active2:after {
+	content: "\2212";
+}
+
+.content1 {
+	padding: 0 18px;
+	max-height: 0;
+	width: 80%;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+}
+
+.bang tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.xo ul li {
+	padding: 6px;
+}
+
+.xo ul li a {
+	color: black;
+	font-size: 17px;
+}
+
+.xo ul li:hover {
+	background: white;
+}
+
+/*ket thuc phan collapse */
+</style>
+
+</head>
+
+<body style="background-color: rgb(160, 213, 236);">
+
+
+	<div class="banner-bottom">
+
+		<div class="container" style="background: white; margin-top: -70px;">
+			<div style="margin-top: 10px;">
+				<h3 style="color: #109d59; text-align: center;">
+					SỞ GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ MINH<br> TRUNG TÂM
+					QUẢN LÝ GIAO THÔNG CÔNG CỘNG THÀNH PHỐ HỒ CHÍ MINH
+				</h3>
+			</div>
+			<!-- menu -->
+			<div class="topnav1" id="myTopnav1" style="margin-top: 10px;">
+				<a href="index.html" class="active1">Trang chủ</a>
+
+				<!-- Group diary -->
+				<a href="quanlituyen.html">Quản lí tuyến xe</a> <a
+					href="quanlidonvi.html">Quản lí hợp tác xã</a> <a
+					href="quanlinhanvien.html">Quản lí nhân viên</a>
+				<!-- Project -->
+
+				<a href="quanlixe.html">Quản lí xe</a> <a href="dichvuthuexe.html">Dịch
+					vụ thuê xe</a>
+
+				<!-- menu collapse -->
+
+
+				<div class="menu1">
+					<a href="#" class="navicon1"></a>
+					<div class="toggle1">
+						<ul class="toggle-menu1 list-unstyled">
+							<li><a href="feedback.html">Phản hồi khách hàng</a></li>
+							<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+							<li><a href="thongtinthoitiet.html">Thông tin thời tiết</a></li>
+							<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+							<li><a href="thongkeve.html">Thống kê vé</a></li>
+							<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+							<li><a href="mailbox.html">Gửi mail cho tất cả nhân viên</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<!-- //menu button -->
+
+				<a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+					onclick="myFunction()">&#9776;</a>
+			</div>
+			<div
+				style="text-align: right; margin-top: 10px; margin-right: 10px; font-size: 18px;">
+
+				<a href="Login.html"><span class="fa fa-lock"></span>&nbsp;Đăng
+					nhập |</a> <a href="Register.html">| <span class="fa fa-sign-in"></span>&nbsp;Đăng
+					kí
+				</a>
+
+
+
+			</div>
+
+
+			<!-- ket thuc menu -->
+
+			<!-- bat dau phan than  -->
+			<div class="banner-bottom-grids" style="margin-top: 10px;">
+				<!-- dong chu chay chay  -->
+				<div class="move-text">
+					<div class="breaking_news">
+						<h2 style="font-size: 17px; margin-top: 4px;">
+							<span class="fa fa-bullhorn">&nbsp;</span>THÔNG BÁO
+						</h2>
+					</div>
+					<div class="marquee">
+						<div class="marquee1">
+							<a class="breaking" href="#">Điều chỉnh giá vé xe buýt trên
+								tuyến xe buýt có trợ giá số 13 và số 94</a>
+						</div>
+						<div class="marquee2">
+							<a class="breaking" href="#">Điều chỉnh số chuyến và thay đổi
+								thời gian hoạt động của tuyến xe buýt phổ thông có trợ giá số
+								14: BX Miền Đông-3/2-BX Miền Tây.</a>
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+					<script type="text/javascript" src="js/jquery.marquee.js"></script>
+					<script>
+						$('.marquee').marquee({
+							pauseOnHover : true
+						});
+						//@ sourceURL=pen.js
+					</script>
+				</div>
+				<!-- ket thuc dong chu chay chay  -->
+
+				<!-- video-grids -->
+
+				<div class="video-grids">
+					<div class="col-md-8 video-grids-left">
+						<div class="video-grids-left1">
+							<img src="imageBus/ii5bzd2i.jpg" alt=" " class="img-responsive"
+								style="margin-top: -30px"> <a
+								class="play-icon popup-with-zoom-anim" href="#small-dialog">
+								<span> </span>
+							</a>
+							<div class="video-grid-pos">
+								<h3 style="margin-left: -10%;">
+									<span>Giới thiệu</span> Buýt Sài Gòn
+								</h3>
+								<ul>
+									<li><label></label></li>
+									<li><label></label></li>
+									<li></li>
+								</ul>
+							</div>
+							<!-- pop-up-box -->
+							<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css"
+								media="all" />
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+
+
+							<!--//pop-up-box -->
+
+							<div id="small-dialog" class="mfp-hide">
+								<iframe width="560" height="315"
+									src="https://www.youtube.com/embed/rb7Gy5m5-ig" frameborder="0"
+									allow="autoplay; encrypted-media" allowfullscreen
+									webkitallowfullscreen mozallowfullscreen></iframe>
+							</div>
+							<script>
+								$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type : 'inline',
+										fixedContentPos : false,
+										fixedBgPos : true,
+										overflowY : 'auto',
+										closeBtnInside : true,
+										preloader : false,
+										midClick : true,
+										removalDelay : 300,
+										mainClass : 'my-mfp-zoom-in'
+									});
+
+								});
+							</script>
+						</div>
+						<!-- bat dau cai trinh chieu -->
+						<div class="video-grids-left2">
+							<div class="course_demo1">
+								<ul id="flexiselDemo1">
+									<!-- video 1  -->
+									<li>
+										<div class="item">
+											<img src="imageBus/tải xuống.jpg" alt=" "
+												class="img-responsive" /> <a
+												class="play-icon popup-with-zoom-anim" href="#small-dialog2">
+												<i> </i>
+											</a>
+											<div id="small-dialog2" class="mfp-hide">
+												<iframe width="560" height="315"
+													src="https://www.youtube.com/embed/Evi7lnhYY7Y"
+													frameborder="0" allow="autoplay; encrypted-media"
+													allowfullscreen></iframe>
+											</div>
+											<div class="floods-text">
+												<h3>
+													TP.HCM thêm 18 tuyến xe buýt điểm | Tin mới nhất<br> <br>
+													<span>Tuổi Trẻ<label>|</label> <i>1:56</i>
+													</span>
+												</h3>
+												<p></p>
+											</div>
+										</div>
+									</li>
+									<!-- video 2  -->
+									<li>
+										<div class="item">
+											<img src="imageBus/tải xuống (1).jpg" alt=" "
+												class="img-responsive" /> <a
+												class="play-icon popup-with-zoom-anim" href="#small-dialog2">
+												<i> </i>
+											</a>
+
+											<div id="small-dialog3" class="mfp-hide">
+												<iframe width="560" height="315"
+													src="https://www.youtube.com/embed/w0ytyRb9DC8"
+													frameborder="0" allow="autoplay; encrypted-media"
+													allowfullscreen></iframe>
+											</div>
+											<div class="floods-text">
+												<h3>
+													Bí mật tàu buýt 5 sao sông Sài Gòn duy nhất ở Việt Nam: Bạn
+													thử chưa?<br> <br> <span>Thanh Niên <label>|</label>
+														<i>2:26</i></span>
+												</h3>
+												<p></p>
+											</div>
+										</div>
+									</li>
+									<!-- video 3  -->
+									<li>
+										<div class="item">
+											<img src="imageBus/tải xuống (2).jpg" alt=" "
+												class="img-responsive" /> <a
+												class="play-icon popup-with-zoom-anim" href="#small-dialog2">
+												<i> </i>
+											</a>
+
+											<div id="small-dialog4" class="mfp-hide">
+												<iframe width="560" height="315"
+													src="https://www.youtube.com/embed/zrEowEsrRv8"
+													frameborder="0" allow="autoplay; encrypted-media"
+													allowfullscreen></iframe>
+											</div>
+
+											<div class="floods-text">
+												<h3>
+													7 tuyến xe buýt ở TP.HCM miễn phí vé dịp lễ 30/4- 1/5<span>Tuổi
+														trẻ <label>|</label> <i>1:10</i>
+													</span>
+												</h3>
+												<p></p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- pop-up-box -->
+							<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css"
+								media="all" />
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							<!--//pop-up-box -->
+							<script>
+								$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type : 'inline',
+										fixedContentPos : false,
+										fixedBgPos : true,
+										overflowY : 'auto',
+										closeBtnInside : true,
+										preloader : false,
+										midClick : true,
+										removalDelay : 300,
+										mainClass : 'my-mfp-zoom-in'
+									});
+
+								});
+							</script>
+							<!-- requried-jsfiles-for owl -->
+							<script type="text/javascript">
+								$(window).load(function() {
+									$("#flexiselDemo1").flexisel({
+										visibleItems : 3,
+										animationSpeed : 1000,
+										autoPlay : true,
+										autoPlaySpeed : 3000,
+										pauseOnHover : true,
+										enableResponsiveBreakpoints : true,
+										responsiveBreakpoints : {
+											portrait : {
+												changePoint : 480,
+												visibleItems : 1
+											},
+											landscape : {
+												changePoint : 640,
+												visibleItems : 2
+											},
+											tablet : {
+												changePoint : 768,
+												visibleItems : 3
+											}
+										}
+									});
+
+								});
+							</script>
+							<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+
+
+
+
+						</div>
+
+						<!-- tin tuc duoi cai slide chay  -->
+						<div class="news">
+							<div class="news-grids">
+								<div class="news-grid-left" style="background: white;">
+									<h3>
+										<span class="fa fa-newspaper-o "></span>&nbsp;Tin tức
+									</h3>
+
+									<div class="tab">
+										<button class="tablinks" onclick="openCity(event, 'London')"
+											id="defaultOpen">
+											<span class="fa fa-calendar"></span>&nbsp;Tin hằng ngày
+										</button>
+										<button class="tablinks" onclick="openCity(event, 'Paris')">
+											<span class="fa fa-calendar-o"></span>&nbsp;Tin theo tháng
+										</button>
+
+
+									</div>
+									<!-- ngay -->
+									<div id="London" class="tabcontent">
+										<span onclick="this.parentElement.style.display='none'"
+											class="topright">&times</span>
+
+										<ul>
+											<li>
+												<!-- 
+												<div class="news-grid-left1">
+													<img src="images/16.jpg" alt=" " class="img-responsive" />
+												</div>
+												-->
+												<div class="tintuc">
+													<h4>
+														<a href="#">Điều chỉnh số chuyến và thay đổi thời gian
+															hoạt động của tuyến xe buýt phổ thông có trợ giá số 14:
+															BX Miền Đông-3/2-BX Miền Tây.</a>
+													</h4>
+													<!-- 
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													-->
+													<p>
+														Từ ngày 20 tháng 10 năm 2018 tuyến xe buýt phổ thông có
+														trợ giá số 14: BX Miền Đông-3/2-BX Miền Tây sẽ thay đổi số
+														chuyến và thời gian hoạt động trong ngày như sau: <a
+															href="#">Xem thêm...</a>
+
+													</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="tintuc">
+													<h4>
+														<a href="#">Lắp đặt trụ dừng xe buýt trên đường Lê Văn
+															Việt, Quận 9 (trước và đối diện Bệnh viện Quận 9)</a>
+													</h4>
+													<!-- 
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													-->
+													<p>
+														Từ ngày 26/10/2018 đến ngày 03/11/2018, Trung tâm Quản lý
+														Giao thông công cộng sẽ tiến hành lắp đặt trụ dừng xe buýt
+														tại 02 vị trí điểm dừng xe buýt hiện hữu trên đường Lê Văn
+														Việt, Quận 9 (trước và đối diện Bệnh viện Quận 9). <a
+															href="#">Xem thêm...</a>
+													</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="tintuc">
+													<h4>
+														<a href="#">Thông báo về việc điều chỉnh giảm số
+															chuyến hoạt động tuyến xe buýt phổ thông có trợ giá mã số
+															61 từ ngày 01 tháng 11 năm 2018</a>
+													</h4>
+													<!-- 
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													-->
+													<p>
+														Từ ngày 01 tháng 11 năm 2018, điều chỉnh giảm số chuyến
+														hoạt động tuyến xe buýt phổ thông có trợ giá mã số 61: Bến
+														xe Chợ Lớn – KCX Lê Minh Xuân, cụ thể: <a href="#">Xem
+															thêm...</a>
+													</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="tintuc">
+													<h4>
+														<a href="#">Từ ngày 01 tháng 11 năm 2018, điều chỉnh
+															giảm số chuyến hoạt động tuyến xe buýt phổ thông có trợ
+															giá mã số 61: Bến xe Chợ Lớn – KCX Lê Minh Xuân, cụ thể:</a>
+													</h4>
+													<!-- 
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													-->
+													<p>Từ ngày 20 tháng 10 năm 2018 tuyến xe buýt phổ thông
+														có trợ giá số 14: BX Miền Đông-3/2-BX Miền Tây sẽ thay đổi
+														số chuyến và thời gian hoạt động trong ngày như sau:</p>
+													<a href="#">Xem thêm...</a>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="tintuc">
+													<h4>
+														<a href="#">Thông báo về việc điều chỉnh giảm số
+															chuyến hoạt động tuyến xe buýt phổ thông có trợ giá mã số
+															54 từ ngày 27 tháng 10 năm 2018</a>
+													</h4>
+													<!-- 
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													-->
+													<p>Từ ngày 27 tháng 10 năm 2018, điều chỉnh giảm số
+														chuyến hoạt động tuyến xe buýt phổ thông có trợ giá mã số
+														54: Bến xe Miền Đông – Bến xe Chợ Lớn, cụ thể:</p>
+													<a href="#">Xem thêm...</a>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+										</ul>
+									</div>
+									<!-- thoe thang -->
+									<div id="Paris" class="tabcontent">
+										<span onclick="this.parentElement.style.display='none'"
+											class="topright">&times</span>
+
+
+										<!-- collapse -->
+										<div>
+											<button class="collapsible1">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018<a
+													style="padding-left: 70%;"><span class="badge blue"
+													style="background: #34b67a;">95</span></a>
+											</button>
+											<div class="content1">
+												<div class="xo">
+
+													<ul>
+														<li><a href="#">2018, Tháng 11</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">3</span></a></li>
+														<li><a href="#">2018, Tháng 10</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">8</span></a></li>
+														<li><a href="#">2018, Tháng 09</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2018, Tháng 08</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">8</span></a></li>
+														<li><a href="#">2018, Tháng 07</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">12</span></a></li>
+														<li><a href="#">2018, Tháng 06</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">9</span></a></li>
+														<li><a href="#">2018, Tháng 05</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2018, Tháng 04</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">10</span></a></li>
+														<li><a href="#">2018, Tháng 03</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">14</span></a></li>
+														<li><a href="#">2018, Tháng 02</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2018, Tháng 01</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">10</span></a></li>
+
+													</ul>
+												</div>
+											</div>
+
+											<button class="collapsible1">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017<a
+													style="padding-left: 70%;"><span class="badge blue"
+													style="background: #34b67a;">152</span></a>
+											</button>
+											<div class="content1">
+												<div class="xo">
+
+													<ul>
+														<li><a href="#">2017, Tháng 12</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">13</span></a></li>
+														<li><a href="#">2017, Tháng 11</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">18</span></a></li>
+														<li><a href="#">2017, Tháng 10</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">22</span></a></li>
+														<li><a href="#">2017, Tháng 09</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">18</span></a></li>
+														<li><a href="#">2017, Tháng 08</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">10</span></a></li>
+														<li><a href="#">2017, Tháng 07</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">19</span></a></li>
+														<li><a href="#">2017, Tháng 06</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">9</span></a></li>
+														<li><a href="#">2017, Tháng 05</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">3</span></a></li>
+														<li><a href="#">2017, Tháng 04</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">12</span></a></li>
+														<li><a href="#">2017, Tháng 03</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">10</span></a></li>
+														<li><a href="#">2017, Tháng 02</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">6</span></a></li>
+														<li><a href="#">2017, Tháng 01</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">12</span></a></li>
+
+													</ul>
+												</div>
+											</div>
+											<button class="collapsible1">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016<a
+													style="padding-left: 70%;"><span class="badge blue"
+													style="background: #34b67a;">57</span></a>
+											</button>
+											<div class="content1">
+												<div class="xo">
+
+													<ul>
+														<li><a href="#">2017, Tháng 12</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2017, Tháng 11</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">12</span></a></li>
+														<li><a href="#">2017, Tháng 10</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2017, Tháng 09</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">12</span></a></li>
+														<li><a href="#">2017, Tháng 08</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">5</span></a></li>
+														<li><a href="#">2017, Tháng 07</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+														<li><a href="#">2017, Tháng 06</a><a href="#"
+															style="padding-left: 70%;"><span class="badge blue"
+																style="background: #72a819;">7</span></a></li>
+
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--  
+										<ul>
+											<li>
+												<div class="news-grid-left1">
+													<img src="images/16.jpg" alt=" " class="img-responsive" />
+												</div>
+												<div class="news-grid-right1">
+													<h4>
+														<a href="single.html">Mexico's oil giant is in
+															uncharted waters</a>
+													</h4>
+													<h5>
+														By <a href="#">Elizibeth Malkin</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua.</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="news-grid-left1">
+													<img src="images/17.jpg" alt=" " class="img-responsive" />
+												</div>
+												<div class="news-grid-right1">
+													<h4>
+														<a href="single.html">second wave of votes to legalize
+															marijuana</a>
+													</h4>
+													<h5>
+														By <a href="#">james smith</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua.</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="news-grid-left1">
+													<img src="images/13.jpg" alt=" " class="img-responsive" />
+												</div>
+												<div class="news-grid-right1">
+													<h4>
+														<a href="single.html">Antares rocket, bound for space
+															station, explodes</a>
+													</h4>
+													<h5>
+														By <a href="#">Michael Drew</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua.</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="news-grid-left1">
+													<img src="images/12.jpg" alt=" " class="img-responsive" />
+												</div>
+												<div class="news-grid-right1">
+													<h4>
+														<a href="single.html">stronger family bonds, two years
+															after hurricane sandy</a>
+													</h4>
+													<h5>
+														By <a href="#">james smith</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua.</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+											<li>
+												<div class="news-grid-left1">
+													<img src="images/15.jpg" alt=" " class="img-responsive" />
+												</div>
+												<div class="news-grid-right1">
+													<h4>
+														<a href="single.html">royal crush giants and force
+															game 7</a>
+													</h4>
+													<h5>
+														By <a href="#">Michael Drew</a> <label>|</label> <i>30.03.2016</i>
+													</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+														elit, sed do eiusmod tempor incididunt ut labore et dolore
+														magna aliqua.</p>
+												</div>
+												<div class="clearfix"></div>
+											</li>
+										</ul>
+										-->
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<!-- bat dau cot ben trai -->
+
+					<div class="col-md-4 video-grids-right">
+
+
+						<!-- form tim kiem  -->
+						<div class="news-grid-rght2" style="margin-top: -30px;">
+							<h3></h3>
+							<p></p>
+							<form style="margin-top: -30px;">
+
+								<span class="glyphicon glyphicon-search"></span> <input
+									type="text" name="Tìm kiếm tin"
+									placeholder="Nhập tin cần tìm kiếm..." autofocus="autofocus">
+								<input style="margin-left: 30%;" type="submit" value="Tìm kiếm">
+							</form>
+						</div>
+						<!-- ket thuc form tim kiem  -->
+
+
+						<div class="sap_tabs">
+							<div id="horizontalTab"
+								style="display: block; width: 100%; margin: 0px;">
+								<ul class="resp-tabs-list">
+									<li class="resp-tab-item grid1" aria-controls="tab_item-0"
+										role="tab"><span>Gần đây</span></li>
+									<li class="resp-tab-item grid2" aria-controls="tab_item-1"
+										role="tab"><span>Cũ hơn</span></li>
+									<div class="clear"></div>
+								</ul>
+								<div class="resp-tabs-container">
+									<div class="tab-1 resp-tab-content"
+										aria-labelledby="tab_item-0">
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/j_zing.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#">TP.HCM tăng vé xe buýt thêm 3.000
+															đồng</a> <label>|</label></li>
+													<li>07:41 18/10/2018</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Sở Giao thông Vận
+														tải (GTVT) TP.HCM vừa công bố quyết định điều chỉnh tăng
+														giá vé xe buýt trên các tuyến có trợ giá. </a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/tahnh_chan.JPG" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#" class="green">Ôtô cố tình vượt
+															trạm thu phí bị thanh chắn đập vào xe</a> <label>|</label></li>
+
+													<li>20:04 18/10/2018</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Thấy xe buýt phía
+														trước vừa qua được trạm thu phí, ôtô liền nhấn ga chạy
+														theo phía sau nhưng không kịp liền bị thanh chắn đập vào
+														cửa kính.</a><a href="#" style="color: #337ab7;">Xem
+														thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/lx.JPG" alt=" " class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#"> Tài xế xe buýt ở vừa nhắn tin vừa
+															lái xe</a> <label>|</label></li>
+													<li>16:57 08/10/2018</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Tài xế tuyến xe
+														buýt 07 vừa lái xe vừa nhắn tin điện thoại khiến hành
+														khách trên xe hú vía.</a><a href="#" style="color: #337ab7;">Xem
+														thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/h2_zing.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+
+													<li><a href="#">Khôi phục lộ trình 13 tuyến buýt
+															Sài Gòn</a> <label>|</label></li>
+													<li>08:50 18/03/2018</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Lộ trình di chuyển
+														của 10 tuyến buýt tại khu vực An Sương và 3 tuyến buýt tại
+														quận Tân Phú, TP.HCM, đã được khôi phục, sau thời gian
+														chịu ảnh hưởng từ các công trình thi công.</a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/H1_2.jpg" alt=" " class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#">Đi xe buýt miễn phí đến sân bay
+															Tân Sơn Nhất</a> <label>|</label></li>
+													<li>16:33 21/02/2018</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Việc miễn phí vé
+														xe cho toàn bộ hành khách di chuyển trên hai tuyến xe buýt
+														số 109 và 152 đến sân bay Tân Sơn Nhất tiếp tục được thực
+														hiện vào 5 ngày sau Tết Mậu Tuất.</a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="tab-1 resp-tab-content"
+										aria-labelledby="tab_item-1">
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/mt455411jpg.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#">Va chạm với xe buýt, người dân
+															chặn đường đòi xử tài xế</a> <label>|</label></li>
+													<li>17:12 12/10/2014</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Sau vụ va chạm,
+														hàng chục người bất ngờ xông ra đòi đánh tài xế để bảo vệ
+														cho một thanh niên tại địa phương.</a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/xebuyt1.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#">Xe buýt lao xuống ruộng, 1 người
+															chết và 20 nạn nhân bị thương</a> <label>|</label></li>
+													<li>13:39 22/12/2017</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Chiếc xe buýt chở
+														hơn 30 hành khách đang chạy trên quốc lộ 62 lao xuống
+														ruộng khi tài xế đánh lái tránh xe máy ngã giữa đường. Vụ
+														tai nạn làm 1 người chết, 20 người bị thương.</a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/ct2096493.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#">Xe buýt mất lái đâm chết một
+															người, rồi lật nghiêng</a> <label>|</label></li>
+													<li>20:08 12/04/2015</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Chiều 12/4, các
+														ngành chức năng tỉnh Tiền Giang điều tra, làm rõ sự cố tai
+														nạn giao thông làm một người tử vong và hơn 10 người bị
+														thương.</a><a href="#" style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/anh_thao_2_1.jpg" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#" class="green">Xe buýt Sài Gòn
+															'nuốt' xe máy vào gầm, một phụ nữ nhập viện</a> <label>|</label></li>
+													<li>21:08 13/02/2017</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Chiếc xe buýt đang
+														ôm vòng xoay An Lạc (TP.HCM) bất ngờ cuốn chiếc xe máy vào
+														gầm rồi lao tới trước cửa hàng bán lốp ôtô.</a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="facts">
+											<div class="tab_list">
+												<img src="imageBus/xe_buyt_16_zing.JPG" alt=" "
+													class="img-responsive" />
+											</div>
+											<div class="tab_list1">
+												<ul>
+													<li><a href="#"> 25 tuyến xe buýt thay đổi lịch
+															trình do xây ga Bến Thành</a> <label>|</label></li>
+													<li>19:04 20/02/2017</li>
+												</ul>
+												<p>
+													<a href="#" style="font-size: 17px;">Sở Giao thông vận
+														tải TP.HCM vừa thông báo lịch trình thay đổi của 25 tuyến
+														xe buýt do ảnh hưởng việc rào chắn, thi công nhà ga Bến
+														Thành thuộc tuyến metro số 1. </a><a href="#"
+														style="color: #337ab7;">Xem thêm...</a>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+								<script type="text/javascript">
+									$(document).ready(
+											function() {
+												$('#horizontalTab')
+														.easyResponsiveTabs({
+															type : 'default', //Types: default, vertical, accordion           
+															width : 'auto', //auto or any width like 600px
+															fit : true
+														// 100% fit in a container
+														});
+											});
+								</script>
+							</div>
+						</div>
+						<div class="news-grid-right">
+							<div class="news-grid-rght1">
+
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist"
+									style="background: black;">
+									<li role="presentation" class="active"><a class="high"
+										href="#home" aria-controls="home" role="tab" data-toggle="tab"><span
+											class="fa fa-cloud"></span>&nbsp;Thời tiết</a></li>
+									<li role="presentation"><a href="#profile"
+										aria-controls="profile" role="tab" data-toggle="tab"><span
+											class="fa fa-map-marker"></span>&nbsp;Chọn vị trí</a></li>
+								</ul>
+
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active london" id="home">
+										<ul>
+											<li>
+												<h4>Thứ 4</h4> <span></span>
+												<p>
+													21<sup>°</sup>
+												</p>
+											</li>
+											<li>
+												<h4>Thứ 5</h4> <span class="moon"></span>
+												<p>
+													25<sup>°</sup>
+												</p>
+											</li>
+											<li>
+												<h4>Thứ 6</h4> <span class="sun"></span>
+												<p>
+													31<sup>°</sup>
+												</p>
+											</li>
+
+											<div class="clearfix"></div>
+										</ul>
+									</div>
+
+									<div role="tabpanel" class="tab-pane" id="profile">
+										<iframe
+											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.271635605523!2d106.78896371431769!3d10.866932360489264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276120e747b7%3A0x4621264c786596c7!2zxJDhuqFpIGjhu41jIE7DtG5nIEzDom0!5e0!3m2!1svi!2s!4v1541387707285"
+											width="600" height="450" frameborder="0" style="border: 0"
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner-bottom 
+		<div class="banner-bottom">
+
+			<div class="container" style="background: white; margin-top: -80px;">
+				<div
+					style="background: black; height: 50px; text-align: left; color: white;">
+					<h3 style="padding: 8px">Hợp tác xã thuộc Bus Sài Gòn</h3>
+				</div>
+				<div class="banner-bottom-grids">
+
+
+					<div class="col-md-3 banner-bottom-grid-left">
+
+						<div class="br-bm-gd-lt">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#">Health</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>120
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>12,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt1">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="sport">Sports</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt2">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="plane">Economic</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>180
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>18,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt3">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="general">General</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>150
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>15,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="banner-bottom-grids">
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt4">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="pol">Blogger</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>450
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>12,965
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt5">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="world">World</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>212
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>18,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt6">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="national">international</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>261
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>15,536
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 banner-bottom-grid-left">
+						<div class="br-bm-gd-lt br-bm-gd-lt7">
+							<div class="overlay">
+								<div class="arrow-left"></div>
+								<div class="rectangle"></div>
+							</div>
+							<div class="health-pos">
+								<div class="health">
+									<ul>
+										<li><a href="#" class="business">business</a></li>
+										<li>30 Aug 2016</li>
+									</ul>
+								</div>
+								<h3>But I must explain to you how all this mistaken idea.</h3>
+								<div class="dummy">
+									<p>Itaque earum rerum hic tenetur a sapiente delectus, ut
+										aut maiores alias.</p>
+								</div>
+								<div class="com-heart">
+									<ul>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-envelope" aria-hidden="true"></span>297
+												Comments</a></li>
+										<li><a href="#"><span
+												class="glyphicon glyphicon-heart" aria-hidden="true"></span>9,996
+												Likes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					-->
+		<div class="clearfix"></div>
+
+	</div>
+
+
+	<!-- collaspe -->
+	<script>
+		var coll = document.getElementsByClassName("collapsible1");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active2");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+	<!-- tabs -->
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(
+						" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+
+
+	<!-- menu-js: collapse  -->
+
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav1");
+			if (x.className === "topnav1") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav1";
+			}
+		}
+	</script>
+	<!-- //menu-js -->
+</body>
+</html>

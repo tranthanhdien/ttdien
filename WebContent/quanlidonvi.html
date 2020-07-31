@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Group03-Quản lí đơn vị hợp tác xã</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="Trendy Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript">
+	
+
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+
+
+</script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+
+<link href="css/tabs.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styleT.css">
+
+</head>
+
+<style>
+.move-text {
+	background-color: #34b67a;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 99999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentFrame {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.closeFrame {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.closeFrame:hover, .closeFrame:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/********************************************************************************************menu */
+.topnav1 {
+	overflow: hidden;
+	background-color: #34B67A;
+	box-shadow: 0px 2px 0px 2px #888888;
+}
+
+.topnav1 a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.active1 {
+	background-color: #35a670;
+	color: white;
+}
+
+.topnav1 .icon {
+	display: none;
+}
+
+.dropdown1 {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content1 a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+}
+
+.topnav1 a:hover, .dropdown1:hover .dropbtn1 {
+	background-color: rgb(16, 157, 89);
+	color: white;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1 a:not (:first-child ), .dropdown1 .dropbtn1 {
+		display: none;
+	}
+	.topnav1 a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav1.responsive {
+		position: relative;
+	}
+	.topnav1.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav1.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav1.responsive .dropdown1 {
+		float: none;
+	}
+	.topnav1.responsive .dropdown-content1 {
+		position: relative;
+	}
+	.topnav1.responsive .dropdown .dropbtn1 {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+/* ****************************************************************************************button menu colapse*/
+
+/**************************************************************************** menu-navigation */
+.menu1 {
+	position: absolute;
+	z-index: 9999;
+	right: 10%;
+	top: 5%;
+}
+
+.menu1 .navicon1 {
+	background: transparent;
+	position: relative;
+	height: 30px;
+	width: 40px;
+	display: block;
+	z-index: 9999;
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-ms-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+	outline: none;
+}
+
+.menu1 .navicon1:before, .menu1 .navicon1:after {
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	content: "";
+	height: 3px;
+	left: 0;
+	-webkit-transition: 0.8s ease;
+	-moz-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	-ms-transition: 0.8s ease;
+	transition: 0.8s ease;
+	width: 40px;
+}
+
+.menu1 .navicon1:before {
+	-moz-box-shadow: #fff 0 14px 0 0;
+	-o-box-shadow: #fff 0 14px 0 0;
+	-ms-box-shadow: #fff 0 14px 0 0;
+	-webkit-box-shadow: #fff 0 14px 0 0;
+	box-shadow: #fff 0 14px 0 0;
+	position: absolute;
+	top: 0;
+}
+
+.menu1 .navicon1:after {
+	position: absolute;
+	top: 28px;
+}
+
+.menu1 .navicon1--active {
+	-webkit-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-moz-transition: linear 0.5s all;
+	-o-transition: linear 0.5s all;
+	transition: linear 0.5s all;
+}
+
+.menu1 .navicon1--active:before {
+	-moz-box-shadow: transparent 0 0 0 0;
+	-ms-box-shadow: transparent 0 0 0 0;
+	-o-box-shadow: transparent 0 0 0 0;
+	-webkit-box-shadow: transparent 0 0 0 0;
+	box-shadow: transparent 0 0 0 0;
+	top: 15px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.menu1 .navicon1--active:after {
+	top: 15px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+
+.menu1 .toggle1 {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 250px;
+	background: #f9f9f9;
+	padding: 2em 3em;
+	opacity: 0;
+	-webkit-transition: ease 0.5s all;
+	-moz-transition: ease 0.5s all;
+	transition: ease 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	z-index: 99999;
+	-webkit-box-shadow: 0px 0px 7px #696868;
+	-moz-box-shadow: 0px 0px 7px #696868;
+	box-shadow: 0px 0px 7px #696868;
+	right: 0;
+}
+
+.menu1 .toggle1--active {
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+	margin-top: 1em;
+}
+
+.menu1 .toggle-menu1 li {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.menu1 .toggle-menu1 li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	font-size: 17px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	font-weight: 400;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.menu1 .toggle-menu1 li a:hover, .menu1 .toggle-menu1 li a.active {
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	transition: 0.5s all;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	background: none;
+}
+
+/***********************************************************************menu-navigation */
+.tintuc {
+	float: left;
+	width: 90%;
+	margin: 1.2em 0 0;
+}
+
+.tintuc h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #000;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.tintuc h4 a {
+	color: #34b67a;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.tintuc h4 a:hover {
+	color: #ddd;
+}
+
+.tintuc h5 {
+	color: black;
+	font-size: .8em;
+	margin: 0.8em 0 1em;
+	font-weight: 400;
+}
+
+.tintuc h5 a {
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+.tintuc h5 a:hover {
+	color: #000;
+}
+
+.tintuc h5 label {
+	color: #D2D2D2;
+	padding: 0 .5em;
+}
+
+.tintuc h5 i {
+	font-style: normal;
+	color: #C0C0C0;
+}
+
+.tintuc p {
+	color: #000;
+	margin: 0;
+	font-size: .9em;
+	line-height: 1.8em;
+}
+
+/*****************************************************************************phan bang htx*/
+.search-box input[type="text"] {
+	font-size: 19px;
+}
+
+#myBtn {
+	float: left;
+	width: 100px;
+}
+
+#page {
+	padding-left: 450px;
+}
+
+.inner-block1 {
+	padding: 0.5em 2em 1.5em 2em;
+	background: #fafafa;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+	
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: 5px;
+}
+
+h2 {
+	margin-left: 40px;
+}
+
+.nav-side-menu {
+	overflow: auto;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: 200;
+	background-color: #34b67a;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 100%;
+	color: #e1ffff;
+}
+
+.nav-side-menu .brand {
+	background-color: #34b67a;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+.nav-side-menu .toggle-btn {
+	display: none;
+}
+
+.nav-side-menu ul, .nav-side-menu li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	line-height: 35px;
+	cursor: pointer;
+	/*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+
+.nav-side-menu ul :not(collapsed) .arrow:before, .nav-side-menu li :not(collapsed) .arrow:before
+	{
+	font-family: FontAwesome;
+	content: "\f078";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	float: right;
+}
+
+.nav-side-menu ul .active, .nav-side-menu li .active {
+	border-left: 3px solid #d19b3d;
+	background-color: #109d59;
+}
+
+.nav-side-menu ul .sub-menu li.active, .nav-side-menu li .sub-menu li.active
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li.active a, .nav-side-menu li .sub-menu li.active a
+	{
+	color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li, .nav-side-menu li .sub-menu li {
+	background-color: #181c20;
+	border: none;
+	line-height: 28px;
+	border-bottom: 1px solid #23282e;
+	margin-left: 0px;
+}
+
+.nav-side-menu ul .sub-menu li:hover, .nav-side-menu li .sub-menu li:hover
+	{
+	background-color: #020203;
+}
+
+.nav-side-menu ul .sub-menu li:before, .nav-side-menu li .sub-menu li:before
+	{
+	font-family: FontAwesome;
+	content: "\f105";
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.nav-side-menu li {
+	padding-left: 0px;
+	border-left: 3px solid #2e353d;
+	border-bottom: 1px solid #23282e;
+}
+
+.nav-side-menu li a {
+	text-decoration: none;
+	color: #e1ffff;
+}
+
+.nav-side-menu li a i {
+	padding-left: 10px;
+	width: 20px;
+	padding-right: 20px;
+}
+
+.nav-side-menu li:hover {
+	border-left: 3px solid #d19b3d;
+	background-color: #4f5b69;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+@media ( max-width : 767px) {
+	.nav-side-menu {
+		position: relative;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.nav-side-menu .toggle-btn {
+		display: block;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 10 !important;
+		padding: 3px;
+		background-color: #ffffff;
+		color: #000;
+		width: 40px;
+		text-align: center;
+	}
+	.brand {
+		text-align: left !important;
+		font-size: 22px;
+		padding-left: 20px;
+		line-height: 50px !important;
+	}
+}
+
+@media ( min-width : 767px) {
+	.nav-side-menu .menu-list .menu-content {
+		display: block;
+	}
+}
+
+.nav-side-menu {
+	left: 0px;
+}
+
+.logo-name h2 {
+	color: #FC8213;
+	margin: 0em;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.header-main1 {
+	background: #fff;
+	padding: 0.5em 2em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.copyrights {
+	margin-top: 10px;
+}
+
+.search-form {
+	position: relative;
+	top: 50%;
+	left: 20%;
+	width: 350px;
+	height: 40px;
+	border-radius: 40px;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: #fff;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.search-form.focus {
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+	position: absolute;
+	top: 10px;
+	left: 38px;
+	font-size: 14px;
+	background: none;
+	color: #5a6674;
+	width: 195px;
+	height: 20px;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.search-button {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.search-button svg {
+	width: 20px;
+	height: 20px;
+	fill: #5a6674;
+}
+
+.search-option {
+	position: absolute;
+	text-align: right;
+	top: 10px;
+	right: 15px;
+}
+
+.search-option div {
+	position: relative;
+	display: inline-block;
+	margin: 0 1px;
+	cursor: pointer;
+}
+
+.search-option div input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.01;
+	cursor: pointer;
+}
+
+.search-option div span {
+	position: absolute;
+	display: block;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	opacity: 0;
+	background: #929AA3;
+	color: #fff;
+	font-size: 9px;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 4px 7px;
+	border-radius: 12px;
+	top: -18px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div span::after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-top: 4px solid #929AA3;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.search-option div:hover span {
+	opacity: 1;
+	top: -21px;
+}
+
+.search-option div label {
+	display: block;
+	cursor: pointer;
+}
+
+.search-option div svg {
+	height: 20px;
+	width: 20px;
+	fill: #5a6674;
+	opacity: 0.6;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	pointer-events: none;
+}
+
+.search-option div:hover svg {
+	opacity: 1;
+}
+
+.search-option div input:checked+label svg {
+	fill: #e24040;
+	opacity: .9;
+}
+
+.search-option div input:checked+label span {
+	background: #e24040;
+}
+
+.search-option div input:checked+label span::after {
+	border-top-color: #e24040;
+}
+
+#over {
+	display: none;
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+}
+
+.login {
+	background-color: #34b67a;
+	height: auto;
+	margin-top: 50px;
+	width: 450px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding-bottom: 5px;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	z-index: 99999;
+	top: 8%;
+	left: 60%;
+	margin-left: -300px;
+	font-size: 16px;
+	width: 450px;
+}
+
+.login .login_title {
+	color: white;
+	font-size: 25px;
+	padding: 5px 0 0px 120px;
+	margin-right: 25px;
+}
+
+.login-content label {
+	display: block;
+	padding-bottom: 7px;
+}
+
+.login-content span {
+	display: block;
+}
+
+.login-content {
+	padding-left: 50px;
+	background-color: white;
+	margin-left: -15px;
+	margin-right: 5px;
+	height: auto;
+	padding-top: 15px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+.img-close {
+	float: right;
+	margin-top: -38px;
+	margin-right: 5px
+}
+
+.button {
+	display: inline-block;
+	min-width: 46px;
+	text-align: center;
+	color: #444;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all 0.218s ease 0s;
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(center top, #F5F5F5, #F1F1F1);
+	cursor: pointer;
+}
+
+.button:hover {
+	border: 1px solid #DCDCDC;
+	text-decoration: none;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="text"], .login input[type="password"] {
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .07) inset;
+	font-family: " Times NewRoman", Times, serif;
+	font-size: 16px; "
+	height: 100px;
+	padding: 0px 8px;
+	width: 380px;
+	font-weight: normal;
+}
+
+.submit-button {
+	display: inline-block;
+	padding: auto;
+	margin: 15px 75px;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 30%;
+}
+
+.btn-info {
+	background: red;
+	border: none;
+	border-radius: 0px;
+}
+
+.btn-info:hover {
+	background: white;
+	color: red;
+	border: red solid 1px;
+}
+
+.modal-header {
+	background: red;
+	color: white;
+}
+
+.btn-default {
+	background: #ff3333;
+	color: white;
+	font-size: 16px;
+}
+
+#se {
+	margin-top: 13px;
+	margin-left: 10px;
+}
+
+select {
+	width: 150px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 10px;
+}
+
+/*nen chay xeo o vuong*/
+.br-bm-gd-lt .overlay .arrow-left {
+	position: relative;
+	left: 0;
+	width: 0;
+	height: 0;
+	top: 0;
+	bottom: 0;
+	border-bottom: 300px solid transparent;
+	border-right: 285px solid rgba(0, 0, 0, 0.85);
+	background: #63b547;
+}
+
+.br-bm-gd-lt1 {
+	background: url('image/gtBuyt.JPG') no-repeat 0px 0px;
+	display: block;
+}
+/*******************************************************************************phan table */
+table {
+	width: 100%;
+}
+
+table, th, td {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border-left: none;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	background-color: #34b67a;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #F0F0F0;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border-left: 1px solid;
+	outline: none;
+	cursor: pointer;
+	padding: 4px 8px;
+	transition: 0.3s;
+	font-size: 16px;
+}
+
+/********************************************/
+.br-bm-gd-lt1 {
+	background: #8B1C62;
+	display: block;
+}
+
+/
+*************************************************  * /
+.navbar-global {
+	background-color: indigo;
+}
+
+.navbar-global .navbar-brand {
+	color: white;
+}
+
+.navbar-global .navbar-user>li>a {
+	color: white;
+}
+
+.navbar-primary {
+	background-color: #333;
+	bottom: 30%;
+	right: 0px;
+	position: fixed;
+	top: 20%;
+	width: 200px;
+	z-index: 8;
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	z-index: 8;
+}
+
+.navbar-primary.collapsed {
+	width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.navbar-primary.collapsed .nav-label {
+	display: none;
+}
+
+.btn-expand-collapse {
+	position: absolute;
+	display: block;
+	left: 0px;
+	bottom: 0;
+	width: 100%;
+	padding: 8px 0;
+	border-top: solid 1px #666;
+	color: grey;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn-expand-collapse:hover, .btn-expand-collapse:focus {
+	background-color: #222;
+	color: white;
+}
+
+.btn-expand-collapse:active {
+	background-color: #111;
+}
+
+.navbar-primary-menu, .navbar-primary-menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbar-primary-menu li a {
+	display: block;
+	padding: 10px 18px;
+	text-align: left;
+	border-bottom: solid 1px #444;
+	color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+	background-color: #000;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+	margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+	color: orchid;
+}
+
+.main-content {
+	margin-top: 60px;
+	margin-left: 200px;
+	padding: 20px;
+}
+
+.collapsed+.main-content {
+	margin-left: 60px;
+}
+/************************************************scroll top*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 30px;
+	border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body style="background-color: rgb(160, 213, 236);">
+
+	<a onclick="topFunction()" id="myBtn" title="Go to top"><img
+		src="images/icon-25-512.png" class="img-fluid img-thumbnail"></a>
+
+	<div class="banner-bottom">
+
+		<div class="container" style="background: white; margin-top: -70px;">
+
+			<!-- bat dau menu -->
+			<div class="topnav1" id="myTopnav1" style="margin-top: 10px;">
+				<a href="index.html">Trang chủ</a>
+
+				<!-- Group diary -->
+				<a href="quanlituyen.html" >Quản lí tuyến xe</a> <a
+					href="quanlidonvi.html" class="active1">Quản lí hợp tác xã</a>
+				<!-- Project -->
+				<a href="quanlinhanvien.html">Quản lí nhân viên</a> <a
+					href="quanlixe.html">Quản lí xe</a> <a href="dichvuthuexe.html">Dịch
+					vụ thuê xe</a>
+
+				<!-- menu collapse -->
+
+
+				<div class="menu1">
+					<a href="#" class="navicon1"></a>
+					<div class="toggle1">
+						<ul class="toggle-menu1 list-unstyled">
+							<li><a href="feedback.html">Phản hồi khách hàng</a></li>
+							<li><a href="danhgiaungdung.html">Đánh giá ứng dụng</a></li>
+							<li><a href="thongtinthoitiet.html">Thông tin thời tiết</a></li>
+							<li><a href="contact.html">Liên hệ chúng tôi</a></li>
+							<li><a href="thongkeve.html">Thống kê vé</a></li>
+							<li><a href="thongkedoanhthu.html">Thống kê doanh thu</a></li>
+							<li><a href="mailbox.html">Gửi mail cho tất cả nhân viên</a></li>
+
+
+						</ul>
+					</div>
+				</div>
+				<!-- //menu button -->
+
+				<a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+					onclick="myFunction()">&#9776;</a>
+			</div>
+
+
+
+			<div class="container">
+
+				<div class="header-right">
+					<div class="profile_details_left">
+
+						<!--notifications of menu start -->
+						<ul class="nofitications-dropdown">
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-envelope"></i><span
+									class="badge" style="font-size: 14px;">2</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 2 tin nhắn</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img">
+												<img src="image/da.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Đặng Văn Đa</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="image/dien.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trần Thanh Điền</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả tin nhắn</a>
+										</div>
+									</li>
+								</ul></li>
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-bell"></i><span
+									class="badge blue" style="font-size: 14px;">5</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">Bạn có 5 thông báo mới</h3>
+										</div>
+									</li>
+
+									<li><a href="#">
+											<div class="user_img"></div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Huỳnh Trấn Thành đã đăng kí
+													tài khoản</p>
+												<p>
+													<span style="font-size: 14px;">30 phút trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Mã Giám Sinh đặt lịch thuê
+													xe 12/12/2018</p>
+												<p>
+													<span style="font-size: 14px;">1 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Trương Phi đã phản hồi chất
+													lượng bến bãi</p>
+												<p>
+													<span style="font-size: 14px;">2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">51B-95960 cập nhật tình hình
+													kẹt xe</p>
+												<p>
+													<span style="font-size: 14px;">Hơn 2 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li class="odd"><a href="#">
+											<div class="user_img">
+												<img src="images/tri.jpg" alt="">
+											</div>
+											<div class="notification_desc">
+												<p style="font-size: 16px;">Chất Phát phản ánh tiếp viên
+													Châu Hồng Anh</p>
+												<p>
+													<span style="font-size: 14px;">3 giờ trước</span>
+												</p>
+											</div>
+											<div class="clearfix"></div>
+									</a></li>
+
+									<li>
+										<div class="notification_bottom">
+											<a href="#" style="font-size: 16px;">Xem tất cả thông báo</a>
+										</div>
+									</li>
+
+								</ul></li>
+
+							<li class="dropdown head-dpdn"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false"><i class="fa fa-tasks"></i><span
+									class="badge blue1" style="font-size: 14px;">9</span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="notification_header">
+											<h3 style="font-size: 16px;">3 lời nhắc sắp tới</h3>
+										</div>
+									</li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Database update</span><span
+													class="percentage">40%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar yellow" style="width: 40%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Dashboard done</span><span
+													class="percentage">90%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar green" style="width: 90%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class2="task-desc">Mobile App</span><span
+													class="percentage">33%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar red" style="width: 33%;"></div>
+											</div>
+									</a></li>
+									<li><a href="#">
+											<div class="task-info">
+												<span class="task-desc">Issues fixed</span><span
+													class="percentage">80%</span>
+												<div class="clearfix"></div>
+											</div>
+											<div class="progress progress-striped active">
+												<div class="bar  blue" style="width: 80%;"></div>
+											</div>
+									</a></li>
+									<li>
+										<div class="notification_bottom">
+											<a href="#">Xem tất cả nhiệm vụ</a>
+										</div>
+									</li>
+								</ul></li>
+
+
+
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<!--notification menu end -->
+
+					<div class="profile_details">
+						<ul>
+							<li class="dropdown profile_details_drop"><a href="#"
+								class="dropdown-toggle" data-toggle="dropdown"
+								aria-expanded="false">
+									<div class="profile_img">
+										<div class="user-name">
+											<p style="font-size: 16px;">SỞ CÔNG TỬ</p>
+											<span style="font-size: 14px;">Quản trị viên</span>
+										</div>
+										<i class="fa fa-angle-down lnr"></i> <i
+											class="fa fa-angle-up lnr"></i>
+										<div class="clearfix"></div>
+									</div>
+							</a>
+								<ul class="dropdown-menu drp-mnu">
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-cog"></i> Cài đặt</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-user"></i> Profile</a></li>
+									<li><a href="#" style="font-size: 16px;"><i
+											class="fa fa-sign-out"></i> Đăng xuất</a></li>
+								</ul></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- breakcrumb -->
+			<div style="margin-top: 1%;">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html"
+							style="font-size: 18px;">Trang chủ</a></li>
+						<li class="breadcrumb-item active" aria-current="page"
+							style="font-size: 17px;">Quản lí đơn vị hợp tác xã</li>
+					</ol>
+				</nav>
+			</div>
+			<!-- //breakcrumb -->
+
+
+
+
+
+			<div class="container">
+				<div class="row" style="margin-top: -2%;">
+					<div class="dropdown" style="float: right;"></div>
+
+					<!-- nhom  button them tuyen xe  -->
+					<div style="margin-left: 60%; margin-top: 2%;">
+						<h5 style="margin-left: -70%; font-weight: bold; font-size: 24px;">QUẢN
+							LÍ ĐƠN VỊ HỢP TÁC XÃ</h5>
+
+
+						<!-- ket thuc hop thoai them -->
+
+						<div style="margin-top: 4%;">
+							<select>
+								<option style="font-size: 16px;">Sắp xếp theo</option>
+								<option style="font-size: 16px;">Tên hợp tác xã</option>
+								<option selected="selected" style="font-size: 16px;">Mã
+									hợp tác xã</option>
+
+
+							</select>
+
+
+							<button class="btn btn-sm" onclick="myFunction()"
+								style="font-size: 16px; margin-left: 2px;">
+								<span class="glyphicon glyphicon-print"></span> In
+							</button>
+							<a href="#themMoi" class="login-window"
+								style="margin-left: 0px; font-size: 16px;"
+								class="login-window button"><button
+									class="btn btn-sm btn-success" id="Them"
+									style="font-size: 16px; background: #34b67a">
+									<span class="glyphicon glyphicon-plus"></span> Thêm mới
+								</button></a>
+						</div>
+					</div>
+
+					<form class="search-form" style="margin-top: -20px;">
+
+						<span id="se" class="glyphicon glyphicon-search"></span> <input
+							type="search" value="" name="timkiem" placeholder="Tìm kiếm... "
+							class="search-input" style="font-size: 17px;"
+							autofocus="autofocus" autocomplete="timkiem">
+						<!-- search  -->
+						<button type="submit" class="search-button"></button>
+
+						<div class="search-option">
+							<div>
+								<input name="type" type="radio" value="type-users"
+									id="type-users">
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+			<!-- cai tab -->
+
+			<div class="news">
+				<div class="news-grids">
+					<div class="news-grid-left"
+						style="background: #f3f3f3; margin-top: -15px;">
+
+						<div class="tab">
+							<button class="tablinks"
+								style="border-bottom: none; border-left: none; border-right: none; border-top: none;">
+								Chế độ xem:</button>
+							<button class="tablinks" onclick="openCity(event, 'London')"
+								id="defaultOpen">
+								<i class="fa fa-table" style="">&nbsp;Dạng hộp</i>
+							</button>
+							<button class="tablinks" onclick="openCity(event, 'Paris')">
+								<i class="fa fa-list" style="">&nbsp;Dạng danh sách</i>
+							</button>
+
+						</div>
+						<!-- xem dang danh sach thu gon -->
+						<div id="London" class="tabcontent">
+							<span onclick="this.parentElement.style.display='none'"
+								class="topright">&times</span>
+
+
+							<div class="banner-bottom-grids">
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+												</ul>
+
+												<div style="margin-left: 140px; margin-top: -25px;">
+													<a href="#xoa1" class="xoa">
+														<button type="button" class="btn btn-sm btn-danger">
+															<span class="glyphicon glyphicon-trash"
+																aria-hidden="true"></span>
+														</button>
+
+
+													</a>
+													<!-- hop thoai sua  -->
+													<a href="#sua1" class="login-window"><button
+															class="btn btn-sm btn-warning" aria-label="">
+															<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+														</button></a>
+
+												</div>
+											</div>
+											<h3 style="background: transparent;">Ngôi Sao Sài Gòn</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 02, 04, 43</p>
+											</div>
+
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>120
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>12,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa2" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua2" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Công ty TNHH Một
+												Thành viên Xe buýt Sài Gòn</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 01, 07, 11, 27, 28, 30, 31, 36,
+													38, 39, 45, 50, 52, 55, 62, 64, 71, 91, 93, 95, 96, 103,
+													139, 148, 152, 61-6, 70-3</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa3" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua3" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Hợp tác xã vận tải
+												19/5</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 03, 18, 23, 24, 33, 41, 48, 60,
+													65, 66, 70, 78, 85, 87, 94, 107, 122, 126, 145, 150, 61-7,
+													62-3, 62-5, 70-2, 70-5</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa4" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua4" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Hợp tác xã vận tải
+												xe buýt Quyết Thắng</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 05, 06, 08, 10, 53, 56</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<!-- xuong dong -->
+								<div class="clearfix"></div>
+							</div>
+							<div class="banner-bottom-grids">
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa5" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua5" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Liên hiệp hợp tác
+												xã vận tải thành phố</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 09, 10, 14, 19, 20, 47, 104, 60-3</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa2" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua2" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Hợp tác xã vận tải
+												xe buýt và du lịch Quyết Tiến</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 13, 65, 70, 79, 61-4, 70-1</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa2" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua2" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Hợp tác xã vận tải
+												số 28</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 15, 16, 73, 84, 101, 144, 151</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 banner-bottom-grid-left">
+									<div class="br-bm-gd-lt br-bm-gd-lt1">
+										<div class="overlay">
+											<div class="arrow-left"></div>
+											<div class="rectangle"></div>
+										</div>
+										<div class="health-pos">
+											<div class="health">
+												<ul>
+													<li><a href="#" class="sport">Chi tiết</a></li>
+
+												</ul>
+											</div>
+											<div style="margin-left: 160px; margin-top: -25px;">
+												<a href="#xoa2" class="xoa">
+													<button type="button" class="btn btn-sm btn-danger">
+														<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+													</button>
+
+
+												</a>
+												<!-- hop thoai sua  -->
+												<a href="#sua2" class="login-window"><button
+														class="btn btn-sm btn-warning" aria-label="">
+														<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+													</button></a>
+
+											</div>
+											<h3 style="background: transparent;">Hợp tác xã vận tải
+												và du lịch Đông Nam</h3>
+											<div class="dummy">
+												<p>Đảm nhận các tuyến: 17, 40, 44, 46, 51, 78, 88, 99,
+													146</p>
+											</div>
+											<!-- 
+											<div class="com-heart">
+												<ul>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-envelope" aria-hidden="true"></span>200
+															Comments</a></li>
+													<li><a href="#"><span
+															class="glyphicon glyphicon-heart" aria-hidden="true"></span>13,536
+															Likes</a></li>
+												</ul>
+											</div>
+											-->
+
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+
+								<div style="margin-right: 40%; margin-top: -15px;">
+									<ul class="pagination pull-right">
+										<li class="disabled"><a href="#"><span
+												class="glyphicon glyphicon-chevron-left"></span></a></li>
+										<li><a href="#"
+											style="color: black; background: #cfcfcf;">1</a></li>
+										<li><a href="#" style="color: black">2</a></li>
+										<li><a href="#" style="color: black">3</a></li>
+										<li><a href="#" style="color: black">4</a></li>
+										<li><a href="#" style="color: black">5</a></li>
+										<li><a href="#" style="color: black"><span
+												class="glyphicon glyphicon-chevron-right"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ket thuc che do xem hinh arnh  -->
+
+						<!-- xem dang bang -->
+						<div id="Paris" class="tabcontent">
+							<span onclick="this.parentElement.style.display='none'"
+								class="topright">&times</span>
+
+							<!--cai bang moi chen vo  -->
+
+							<table>
+
+								<tr>
+									<th title="Mã hợp tác xã" style="width: 5%;">Mã</th>
+									<th style="width: 12%;" title="Tên hợp tác xã">Tên HTX</th>
+
+									<th style="width: 25%;">Địa chỉ</th>
+									<th style="width: 15%;">Liên hệ</th>
+									<th style="">Các tuyến đảm nhận</th>
+									<th style="width: 5%; text-align: center"
+										title="Có kí kết trợ giá cho sinh viên không?">Trợ giá</th>
+									<th title="Xóa 1 hợp tác xã khỏi hệ thống" style="width: 10%">Thao
+										tác</th>
+
+								</tr>
+
+
+
+
+								<tr>
+									<td>001</td>
+									<td>Ngôi Sao Sài Gòn</td>
+									<td>233/7 Thống Nhất,phường An Hòa, Q.2, TP.HCM</td>
+									<td>(028) 332 658<br>ngoisaosaigon@gmail.com
+									</td>
+									<td>02, 04, 43</td>
+
+									<td style="width: 8%; text-align: center"><i
+										class="fa fa-check" title="Có trợ giá"></i></td>
+									<td><a href="#xoa1" class="xoa">
+											<button type="button" class="btn btn-sm btn-danger">
+												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+											</button>
+
+
+									</a> <!-- hop thoai sua  --> <a href="#sua1" class="login-window"><button
+												class="btn btn-sm btn-warning" aria-label="">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button></a></td>
+
+								</tr>
+
+
+								<tr>
+									<td>002</td>
+									<td>Buýt Sài Gòn</td>
+									<td>211 Thích Vạn Hạnh,phường 7, Q.Phú Nhuận, TP.HCM</td>
+									<td>(028) 456 999<br>buytsaigon@gmail.com
+									</td>
+									<td>01, 07, 11, 27, 28, 30, 31, 36, 38, 39,...</td>
+									<td style="width: 8%; text-align: center"></td>
+
+
+									<td><a href="#xoa2" class="xoa">
+											<button type="button" class="btn btn-sm btn-danger">
+												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+											</button>
+
+
+									</a> <!-- hop thoai sua  --> <a href="#sua2" class="login-window"><button
+												class="btn  btn-sm btn-warning" aria-label="">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button></a></td>
+								</tr>
+
+								<tr>
+									<td>003</td>
+									<td>HTX 19/5</td>
+									<td>567/12 QL1A, phường An Phú Đông, Q.12, TP.HCM</td>
+									<td>(028) 332 115<br>nguyenthanhan@gmail.com
+									</td>
+									<td>03, 18, 23, 24, 33, 41, 48, 60, 65, 66, 70,...</td>
+									<td style="width: 8%; text-align: center"><i
+										class="fa fa-check" title="Có trợ giá"></i></td>
+									<td><a href="#xoa3" class="xoa">
+											<button type="button" class="btn btn-sm btn-danger">
+												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+											</button>
+
+
+									</a> <!-- hop thoai sua  --> <a href="#sua3" class="login-window"><button
+												class="btn  btn-sm btn-warning" aria-label="">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button></a></td>
+								</tr>
+
+								<tr>
+									<td>004</td>
+									<td>Quyết Thắng</td>
+									<td>99/2 Hồng Bàng,phường An Lạc, Q.5, TP.HCM</td>
+									<td>(028) 365 146<br>quyetthang.xebuyt@gmail.com
+									</td>
+									<td>05, 06, 08, 10, 53, 56</td>
+									<td style="width: 8%; text-align: center"></td>
+									<td><a href="#xoa4" class="xoa">
+											<button type="button" class="btn btn-sm btn-danger">
+												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+											</button>
+
+
+									</a> <!-- hop thoai sua  --> <a href="#sua4" class="login-window"><button
+												class="btn  btn-sm btn-warning" aria-label="">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button></a></td>
+								</tr>
+
+								<tr>
+									<td>005</td>
+									<td>Liên hiệp HTX TP</td>
+									<td>99/3/3 Võ Văn Ngân, phường Bình Thọ, Q.Thủ Đức, TP.HCM</td>
+									<td>(028) 113 995<br>lienhiepxebuyt@gmail.com
+									</td>
+									<td>09, 10, 14, 19, 20, 47, 104, 60-3</td>
+									<td style="width: 8%; text-align: center"><i
+										class="fa fa-check" title="Có trợ giá"></i></td>
+									<td><a href="#xoa5" class="xoa">
+											<button type="button" class="btn btn-sm btn-danger">
+												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+											</button>
+
+
+									</a> <!-- hop thoai sua  --> <a href="#sua5" class="login-window"><button
+												class="btn  btn-sm btn-warning" aria-label="">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button></a></td>
+								</tr>
+
+
+							</table>
+
+
+
+
+							<div class="clearfix"></div>
+
+							<div style="margin-right: 40%; margin-top: -15px;">
+								<ul class="pagination pull-right">
+									<li class="disabled"><a href="#"><span
+											class="glyphicon glyphicon-chevron-left"></span></a></li>
+									<li><a href="#" style="color: black; background: #cfcfcf;">1</a></li>
+									<li><a href="#" style="color: black">2</a></li>
+									<li><a href="#" style="color: black">3</a></li>
+									<li><a href="#" style="color: black">4</a></li>
+									<li><a href="#" style="color: black">5</a></li>
+									<li><a href="#" style="color: black"><span
+											class="glyphicon glyphicon-chevron-right"></span></a></li>
+								</ul>
+							</div>
+
+
+							<div class="clearfix"></div>
+
+
+
+							<!-- cai moi chen vo -->
+						</div>
+						<!-- ket thuc che do xem abang -->
+					</div>
+
+				</div>
+			</div>
+			<!-- dong news -->
+		</div>
+		<!-- containner -->
+	</div>
+
+
+
+	<!-- cac modal -->
+
+	<!-- them va sua -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a.login-window').click(function() {
+
+				//lấy giá trị thuộc tính href - chính là phần tử "#login-box"
+				var loginBox = $(this).attr('href');
+
+				//cho hiện hộp đăng nhập trong 300ms
+				$(loginBox).fadeIn("fast");//slow
+
+				// thêm phần tử id="over" vào sau body
+				$('body').append('<div id="over"></div>');
+				$('#over').fadeIn(300);
+
+				return false;
+			});
+
+			// khi click đóng hộp thoại
+			$(document).on('click', "a.close, #over", function() {
+				$('#over, .login').fadeOut(300, function() {
+					$('#over').remove();
+				});
+				return false;
+			});
+
+		});
+	</script>
+	<!-- //js them va sua -->
+
+
+
+	<!-- Them moi -->
+	<div id="themMoi" class="login">
+		<p class="login_title" style="margin-top: 7px">Thêm mới HTX</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				placeholder="001" type="text" autocomplete="on"
+				autofocus="autofocus" title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				placeholder="Ngôi Sao Sài Gòn" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				placeholder="233/7 Thống Nhất, phường An Hòa, Q.2, TP.HCM"
+				title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" placeholder="028 332 658"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" placeholder="0ngoisaosaigon@email.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text" placeholder="02, 04, 43"
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox" checked="checked" placeholder="">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+
+	<!-- //them moi -->
+	<!-- sua 1 -->
+	<div id="sua1" class="login">
+		<p class="login_title" style="margin-top: 7px">Sửa HTX 001</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				value="001" type="text" autocomplete="on" autofocus="autofocus"
+				title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				value="Ngôi Sao Sài Gòn" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				value="233/7 Thống Nhất, phường An Hòa, Q.2, TP.HCM" title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" value="028 332 658"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" value="0ngoisaosaigon@email.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text" value="02, 04, 43"
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox" checked="checked" placeholder="">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+	<!-- //sua1 -->
+
+	<!-- sua 2 -->
+	<div id="sua2" class="login">
+		<p class="login_title" style="margin-top: 7px">Sửa HTX 002</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				value="002" type="text" autocomplete="on" autofocus="autofocus"
+				title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				value="Buýt Sài Gòn" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				value="211 Thích Vạn Hạnh, phường 7, Quận Phú Nhuận, TP.HCM"
+				title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" value="028 456 999"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" value="buytsaigon@email.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text"
+				value="01, 07, 11, 27, 28, 30, 31, 36, 38, 39,..."
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox" placeholder=""
+				title="HTX có kí hợp đồng trợ giá cho Sinh Viên và các diện chính sách">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+	<!-- //sua2 -->
+
+	<!-- sua 3 -->
+	<div id="sua3" class="login">
+		<p class="login_title" style="margin-top: 7px">Sửa HTX 003</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				value="003" type="text" autocomplete="on" autofocus="autofocus"
+				title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				value="HTX 19/5" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				value="567/2 QL1A, phường An Phú Đông, Q.12, TP.HCM" title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" value="028 332 155"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" value="nguyenthanhan@email.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text"
+				value="03, 18, 23, 24, 33, 41, 48, 60, 65, 66, 70,..."
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox" checked="checked"
+				title="HTX có kí hợp đồng trợ giá cho Sinh Viên và các diện chính sách">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+	<!-- //sua3 -->
+
+	<!-- sua 4 -->
+	<div id="sua4" class="login">
+		<p class="login_title" style="margin-top: 7px">Sửa HTX 004</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				value="004" type="text" autocomplete="on" autofocus="autofocus"
+				title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				value="Quyết Thắng" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				value="99/2 Hồng Bàng, phường An Lạc, Q.5, TP.HCM" title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" value="(028) 365 146"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" value="quyetthang.xebuyt@gmail.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text" value="05, 06, 08, 10, 53, 56"
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox"
+				title="HTX có kí hợp đồng trợ giá cho Sinh Viên và các diện chính sách">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+	<!-- //sua4 -->
+
+
+	<!-- sua 5 -->
+	<div id="sua5" class="login">
+		<p class="login_title" style="margin-top: 7px">Sửa HTX 005</p>
+		<a href="#" class="close"><button
+				class="img-close btn btn-warning" title="Close Window"
+				style="background: red;">X</button></a>
+
+		<form method="post" class="login-content" action="#">
+			<label class="username"> <span>Mã HTX</span> <input
+				value="005" type="text" autocomplete="on" autofocus="autofocus"
+				title="Mã Hợp tác xã">
+			</label> <label class="password"> <span title="Tên HTX">Tên
+					HTX</span> <input id="password" name="password" type="text"
+				value="Liên hiệp HTX TP" title="Tên hợp tác xã">
+			</label> <label class="username"> <span>Địa chỉ</span> <input
+				id="username" name="username" type="text" autocomplete="on"
+				value="99/3/3 Võ Văn Ngân, phường Bình Thọ, Q.Thủ Đức, TP.HCM"
+				title="Địa chỉ">
+			</label> <label class=""> <span>Điện thoại</span> <input
+				id="password" name="sochuyen" type="text" value="(028) 113 995"
+				title="Số điện thoại">
+			</label> <label class=""> <span>Email</span> <input id="password"
+				name="sochuyen" type="text" value="lienhiepxebuyt@gmail.com"
+				title="Email">
+			</label> <label class=""> <span>Các tuyến đảm nhận</span> <input
+				id="" name="tg" type="text"
+				value="09, 10, 14, 19, 20, 47, 104, 60-3"
+				title="Các tuyến cách nhau dấu phẩy!">
+			</label> <label class="password"> Trợ giá: <input id="" name=""
+				value="" type="checkbox" checked="checked"
+				title="HTX có kí hợp đồng trợ giá cho Sinh Viên và các diện chính sách">
+			</label>
+
+			<button class="button submit-button" type="button"
+				style="background: #34b67a; color: white">Gửi</button>
+			<p></p>
+		</form>
+	</div>
+	<!-- //sua5 -->
+
+
+
+	<!-- js xoa -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a.xoa').click(function() {
+
+				//lấy giá trị thuộc tính href - chính là phần tử "#login-box"
+				var loginBox2 = $(this).attr('href');
+
+				//cho hiện hộp đăng nhập trong 300ms
+				$(loginBox2).fadeIn("fast");
+
+				// thêm phần tử id="over" vào sau body
+				$('body').append('<div id="over1"></div>');
+				$('#over1').fadeIn(300);
+
+				return false;
+			});
+			// khi click đóng hộp thoại
+
+			$(document).on('click', "a.Thoat, #over1", function() {
+				$('#over1, .modal').fadeOut(300, function() {
+					$('#over1').remove();
+				});
+				return false;
+			});
+
+		});
+	</script>
+	<!-- //js xoa -->
+	<!-- xoa1 -->
+
+	<div>
+		<div id="xoa1" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="Thoat" style="float: right; margin-right: 2%;"><button
+								class=" btn btn-danger" title="Close Window">X</button></a>
+						<h4 class="modal-title">Cảnh báo</h4>
+					</div>
+					<div class="modal-body">
+						<p style="font-size: 16px;">Bạn đang xóa HTX 001: Ngôi Sao Sài
+							Gòn?</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="Thoat"><button type="button"
+								class="btn btn-default">Đồng ý</button></a> <a href="#"
+							class="Thoat"><button type="button" class="btn btn-default">Thoát</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div>
+		<div id="xoa2" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="Thoat" style="float: right; margin-right: 2%;"><button
+								class=" btn btn-danger" title="Close Window">X</button></a>
+						<h4 class="modal-title">Cảnh báo</h4>
+					</div>
+					<div class="modal-body">
+						<p style="font-size: 16px;">Bạn đang xóa HTX 002: Buýt Sài
+							Gòn?</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="Thoat"><button type="button"
+								class="btn btn-default">Đồng ý</button></a> <a href="#"
+							class="Thoat"><button type="button" class="btn btn-default">Thoát</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div>
+		<div id="xoa3" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="Thoat" style="float: right; margin-right: 2%;"><button
+								class=" btn btn-danger" title="Close Window">X</button></a>
+						<h4 class="modal-title">Cảnh báo</h4>
+					</div>
+					<div class="modal-body">
+						<p style="font-size: 16px;">Bạn đang xóa HTX 003: 19/5</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="Thoat"><button type="button"
+								class="btn btn-default">Đồng ý</button></a> <a href="#"
+							class="Thoat"><button type="button" class="btn btn-default">Thoát</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div>
+		<div id="xoa4" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="Thoat" style="float: right; margin-right: 2%;"><button
+								class=" btn btn-danger" title="Close Window">X</button></a>
+						<h4 class="modal-title">Cảnh báo</h4>
+					</div>
+					<div class="modal-body">
+						<p style="font-size: 16px;">Bạn đang xóa HTX 004: Quyết Thắng</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="Thoat"><button type="button"
+								class="btn btn-default">Đồng ý</button></a> <a href="#"
+							class="Thoat"><button type="button" class="btn btn-default">Thoát</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--  -->
+	<div>
+		<div id="xoa5" class="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="Thoat" style="float: right; margin-right: 2%;"><button
+								class=" btn btn-danger" title="Close Window">X</button></a>
+						<h4 class="modal-title">Cảnh báo</h4>
+					</div>
+					<div class="modal-body">
+						<p style="font-size: 16px;">Bạn đang xóa HTX 005: Liên hiệp
+							HTX TP</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="Thoat"><button type="button"
+								class="btn btn-default">Đồng ý</button></a> <a href="#"
+							class="Thoat"><button type="button" class="btn btn-default">Thoát</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- scroll top -->
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20
+					|| document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<!-- menu -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav1");
+			if (x.className === "topnav1") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav1";
+			}
+		}
+	</script>
+
+	<!-- cua phan admin  -->
+	<script type="text/javascript">
+		$('.btn-expand-collapse').click(function(e) {
+			$('.navbar-primary').toggleClass('collapsed');
+		});
+	</script>
+	<!-- cua phan admin  -->
+	<!-- banner bottom -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(
+						" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	<!-- menu-js: collapse  -->
+	<script>
+		$('.navicon1').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('navicon1--active');
+			$('.toggle1').toggleClass('toggle1--active');
+		});
+	</script>
+	<!-- //menu-js -->
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+</body>
+</html>
